@@ -5,7 +5,10 @@
 ## Supported systems
 
 - aegean
-- attic
+- arabic eastern
+- asian eastern (chinese, japanese, korean)
+- asian formal
+- attic (greek, herodianic, acrophonic)
 - babylonian
 - bengali
 - bijective
@@ -14,7 +17,7 @@
 - counting rods
 - devanagari
 - duodecimal
-- eastern arabic
+- etruscan
 - gujarati
 - gurmukhi
 - hebrew
@@ -23,12 +26,13 @@
 - lao
 - malayalam
 - odia
-- persian
+- persian (dari, pashto)
 - roman
 - tally marks
 - tamil
 - telugu
 - thai
+- tibetan
 
 ## TODO
 
@@ -49,7 +53,6 @@
 - Cyrillic / Glagolitic https://en.wikipedia.org/wiki/Cyrillic_numerals
 - Egyptian https://en.wikipedia.org/wiki/Egyptian_numerals
 - Ge'ez https://en.wikipedia.org/wiki/Ge%CA%BDez_script#Numerals
-- Greek https://en.wikipedia.org/wiki/Ancient_Greek_Numbers_(Unicode_block)
 - Japanese https://en.wikipedia.org/wiki/Japanese_numerals
 - Korean https://en.wikipedia.org/wiki/Korean_numerals
 - Maya https://en.wikipedia.org/wiki/Maya_numerals
@@ -65,6 +68,7 @@ const brahmi = [
 
 ### Improvements
 
+- Asian - use 10, 100, 1000 signs
 - Chuvash - Need a better 1, 10 and 50 (50 needs to be upside down)
 - Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲

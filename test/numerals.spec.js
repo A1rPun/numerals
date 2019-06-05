@@ -6,7 +6,7 @@ import {
   toBabylonian,
   toBijective,
   toRoman,
-} from '../index.js';
+} from '../main.js';
 
 function testNumerals(fn) {
   const testArray = Array.from(Array(9999), (_, i) => i + 1);
