@@ -28,6 +28,7 @@ const {
   toMongolian,
   toOdia,
   toPersian,
+  toPhoenician,
   toRoman,
   toTamil,
   toTelugu,
@@ -67,6 +68,7 @@ log('Malayalam', toMalayalam(input));
 log('Mongolian', toMongolian(input));
 log('Odia', toOdia(input));
 log('Persian', toPersian(input));
+log('Phoenician', toPhoenician(input));
 log('Roman', toRoman(input));
 log('Tamil', toTamil(input));
 log('Telugu', toTelugu(input));

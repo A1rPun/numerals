@@ -33,6 +33,7 @@
 - mongolian
 - odia
 - persian (dari, pashto)
+- phoenician
 - roman
 - tally marks
 - tamil
@@ -56,6 +57,7 @@
 - parseGlagolitic
 - parseHebrew
 - parseKharosthi
+- parsePhoenician
 - parseTallyMarks
 
 ### Systems
@@ -65,8 +67,6 @@
 - Brahmi https://en.wikipedia.org/wiki/Brahmi_numerals
 - Ge'ez https://en.wikipedia.org/wiki/Ge%CA%BDez_script#Numerals
 - Maya https://en.wikipedia.org/wiki/Maya_numerals
-- Phoenician https://en.wikipedia.org/wiki/Phoenician_alphabet#Numerals
-- Kharosthi https://en.wikipedia.org/wiki/Kharosthi#Numerals
 
 ```javascript
 const brahmi = [

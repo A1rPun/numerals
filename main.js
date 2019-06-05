@@ -27,6 +27,7 @@ export * from './src/malayalam.js';
 export * from './src/mongolian.js';
 export * from './src/odia.js';
 export * from './src/persian.js';
+export * from './src/phoenician.js';
 export * from './src/roman.js';
 export * from './src/tallymarks.js';
 export * from './src/tamil.js';
