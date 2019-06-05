@@ -15,9 +15,11 @@
 - burmese
 - chuvash
 - counting rods
+- cyrillic
 - devanagari
 - duodecimal
 - etruscan
+- glagolitic
 - gujarati
 - gurmukhi
 - hebrew
@@ -25,6 +27,7 @@
 - khmer
 - lao
 - malayalam
+- mongolian
 - odia
 - persian (dari, pashto)
 - roman
@@ -36,6 +39,7 @@
 
 ## TODO
 
+- https://en.wikipedia.org/wiki/List_of_numbers_in_various_languages
 - Fractions
 - Error handling for valid input (Garbage in garbage out for now)
 
@@ -48,13 +52,10 @@
 ### Systems
 
 - Abjad https://en.wikipedia.org/wiki/Abjad_numerals
+- Ancient greek
 - Brahmi https://en.wikipedia.org/wiki/Brahmi_numerals
-- Chinese https://en.wikipedia.org/wiki/Chinese_numerals
-- Cyrillic / Glagolitic https://en.wikipedia.org/wiki/Cyrillic_numerals
 - Egyptian https://en.wikipedia.org/wiki/Egyptian_numerals
 - Ge'ez https://en.wikipedia.org/wiki/Ge%CA%BDez_script#Numerals
-- Japanese https://en.wikipedia.org/wiki/Japanese_numerals
-- Korean https://en.wikipedia.org/wiki/Korean_numerals
 - Maya https://en.wikipedia.org/wiki/Maya_numerals
 - Phoenician https://en.wikipedia.org/wiki/Phoenician_alphabet#Numerals
 
@@ -68,10 +69,11 @@ const brahmi = [
 
 ### Improvements
 
-- Asian - use 10, 100, 1000 signs
+- Asian - use 10, 100, 1000 signs (https://en.wikipedia.org/wiki/Korean_numerals)
 - Chuvash - Need a better 1, 10 and 50 (50 needs to be upside down)
 - Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲
 - Tally marks - better implementation
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲
 - Duodecimal - Fallback on ⵒ/Ɛ or X/E
+- Roman / Cyrillic String.repeat need better implementation
