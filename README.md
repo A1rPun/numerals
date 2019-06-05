@@ -20,6 +20,7 @@
 - duodecimal
 - egyptian
 - etruscan
+- georgian
 - glagolitic
 - gujarati
 - gurmukhi
@@ -50,6 +51,7 @@
 - parseCyrillic
 - parseEgyptian
 - parseEtruscan
+- parseGeorgian
 - parseGlagolitic
 - parseHebrew
 - parseTallyMarks
