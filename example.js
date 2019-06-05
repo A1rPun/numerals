@@ -15,6 +15,7 @@ const {
   toDuodecimal,
   toEgyptian,
   toEtruscan,
+  toGeez,
   toGeorgian,
   toGlagolitic,
   toGujarati,
@@ -55,6 +56,7 @@ log('Devanagari', toDevanagari(input));
 log('Duodecimal', toDuodecimal(input));
 log('Egyptian', toEgyptian(input));
 log('Etruscan', toEtruscan(input));
+log('Geez', toGeez(input));
 log('Georgian', toGeorgian(input));
 log('Glagolitic', toGlagolitic(input));
 log('Gujarati', toGujarati(input));

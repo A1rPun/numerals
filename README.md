@@ -20,6 +20,7 @@
 - duodecimal
 - egyptian
 - etruscan
+- ge'ez
 - georgian
 - glagolitic
 - gujarati
@@ -43,29 +44,17 @@
 
 ## TODO
 
+- https://en.wikipedia.org/wiki/List_of_numeral_system_topics
 - https://en.wikipedia.org/wiki/List_of_numbers_in_various_languages
+- Implement -> throw Error('Not implemented');
 - Fractions
 - Error handling for valid input (Garbage in garbage out for now)
-
-- parseAttic
-- parseBabylonian
-- parseChuvash
-- parseCyrillic
-- parseEgyptian
-- parseEtruscan
-- parseGeorgian
-- parseGlagolitic
-- parseHebrew
-- parseKharosthi
-- parsePhoenician
-- parseTallyMarks
 
 ### Systems
 
 - Abjad https://en.wikipedia.org/wiki/Abjad_numerals
 - Ancient greek
 - Brahmi https://en.wikipedia.org/wiki/Brahmi_numerals
-- Ge'ez https://en.wikipedia.org/wiki/Ge%CA%BDez_script#Numerals
 - Maya https://en.wikipedia.org/wiki/Maya_numerals
 
 ```javascript
@@ -80,9 +69,10 @@ const brahmi = [
 
 - Asian - use 10, 100, 1000 signs (https://en.wikipedia.org/wiki/Korean_numerals)
 - Chuvash - Need a better 1, 10 and 50 (50 needs to be upside down)
+- Duodecimal - Fallback on ⵒ/Ɛ or X/E
+- Ge'ez - ፼ = 10000
 - Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲
 - Tally marks - better implementation
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲
-- Duodecimal - Fallback on ⵒ/Ɛ or X/E
 - Roman / Cyrillic / Kharosthi String.repeat need better implementation
