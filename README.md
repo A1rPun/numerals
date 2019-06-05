@@ -6,6 +6,7 @@
 
 - aegean
 - arabic eastern
+- armenian
 - asian eastern (chinese, japanese, korean, vietnamese)
 - asian formal
 - attic (greek, herodianic, acrophonic)
@@ -46,7 +47,6 @@
 ## TODO
 
 - https://www.convert-me.com/en/convert/hex_octal_binary_roman/numdec.html?u=numdec&v=1
-- https://en.wikipedia.org/wiki/List_of_numeral_system_topics
 - https://en.wikipedia.org/wiki/List_of_numbers_in_various_languages
 - Implement -> throw Error('Not implemented');
 - Fractions
@@ -69,12 +69,13 @@ const brahmi = [
 
 ### Improvements
 
+- Armenian - Writing numbers greater than 9999 is done by drawing a line over them, indicating their value is to be multiplied by 10000.
 - Asian - use 10, 100, 1000 signs (https://en.wikipedia.org/wiki/Korean_numerals)
 - Chuvash - Need a better 1, 10 and 50 (50 needs to be upside down)
 - Duodecimal - Fallback on ⵒ/Ɛ or X/E
 - Ge'ez - ፼ = 10000
 - Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲
-- Tally marks - better implementation
+- Tally marks - better implementation /|||| /||
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲
 - Roman / Cyrillic / Kharosthi String.repeat need better implementation

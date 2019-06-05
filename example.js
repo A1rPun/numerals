@@ -1,6 +1,7 @@
 const {
   toAegean,
   toArabic,
+  toArmenian,
   toAsian,
   toAsianFormal,
   toAttic,
@@ -43,8 +44,9 @@ const log = (name, result) => console.log(name.padEnd(15), result);
 
 log('Aegean', toAegean(input));
 log('Arabic', toArabic(input));
+log('Armenian', toArmenian(input));
+log('Asian Eastern', toAsian(input));
 log('Asian Formal', toAsianFormal(input));
-log('Asian', toAsian(input));
 log('Attic', toAttic(input));
 log('Babylonian', toBabylonian(input));
 log('Bengali', toBengali(input));

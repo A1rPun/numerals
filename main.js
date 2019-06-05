@@ -1,5 +1,6 @@
 export * from './src/aegean.js';
 export * from './src/arabic-east.js';
+export * from './src/armenian.js';
 export * from './src/asian.js';
 export * from './src/asianformal.js';
 export * from './src/attic.js';
