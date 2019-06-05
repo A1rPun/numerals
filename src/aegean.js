@@ -1,4 +1,4 @@
-const aegeanNumerals = [
+const aegean = [
   ['', '𐄇', '𐄈', '𐄉', '𐄊', '𐄋', '𐄌', '𐄍', '𐄎', '𐄏'], // ones
   ['', '𐄐', '𐄑', '𐄒', '𐄓', '𐄔', '𐄕', '𐄖', '𐄗', '𐄘'], // tens
   ['', '𐄙', '𐄚', '𐄛', '𐄜', '𐄝', '𐄞', '𐄟', '𐄠', '𐄡'], // hundreds
@@ -7,7 +7,7 @@ const aegeanNumerals = [
 ];
 
 export function parseAegean(str) {
-  const numeral = aegeanNumerals.reduce(
+  const numeral = aegean.reduce(
     (acc, x) => x.indexOf(x.find(y => y && ~str.indexOf(y)) || '') + acc,
     ''
   );
@@ -18,5 +18,5 @@ export function toAegean(n) {
     .toString()
     .split('')
     .reverse()
-    .reduce((acc, x, i) => (i < 5 ? aegeanNumerals[i][x] : '') + acc, '');
+    .reduce((acc, x, i) => (i < 5 ? aegean[i][x] : '') + acc, '');
 }

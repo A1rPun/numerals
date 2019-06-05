@@ -47,6 +47,10 @@
 - parseAttic
 - parseBabylonian
 - parseChuvash
+- parseCyrillic
+- parseEgyptian
+- parseEtruscan
+- parseGlagolitic
 - parseHebrew
 - parseTallyMarks
 
@@ -58,6 +62,7 @@
 - Ge'ez https://en.wikipedia.org/wiki/Ge%CA%BDez_script#Numerals
 - Maya https://en.wikipedia.org/wiki/Maya_numerals
 - Phoenician https://en.wikipedia.org/wiki/Phoenician_alphabet#Numerals
+- Kharosthi https://en.wikipedia.org/wiki/Kharosthi#Numerals
 
 ```javascript
 const brahmi = [
@@ -65,6 +70,7 @@ const brahmi = [
   ['𑁛', '𑁜', '𑁝', '𑁞', '𑁟', '𑁠', '𑁡', '𑁢', '𑁣'],
   ['𑁤', '𑁥'],
 ];
+const kharosthi = ['𐩀', '𐩁', '𐩂', '𐩃', '𐩄', '𐩅', '𐩆', '𐩇']; // 1 2 3 4 10 20 100 1000
 ```
 
 ### Improvements

@@ -1,10 +1,10 @@
 import { parseNumeral, toNumeral } from './common';
 
-const laoNumerals = ['໐', '໑', '໒', '໓', '໔', '໕', '໖', '໗', '໘', '໙'];
+const lao = ['໐', '໑', '໒', '໓', '໔', '໕', '໖', '໗', '໘', '໙'];
 
 export function parseLao(str) {
-  return parseNumeral(str, laoNumerals);
+  return parseNumeral(str, lao);
 }
 export function toLao(n) {
-  return toNumeral(n, laoNumerals);
+  return toNumeral(n, lao);
 }

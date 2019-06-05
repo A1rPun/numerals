@@ -1,10 +1,10 @@
 import { parseNumeral, toNumeral } from './common';
 
-const burmeseNumerals = ['၀', '၁', '၂', '၃', '၄', '၅', '၆', '၇', '၈', '၉'];
+const burmese = ['၀', '၁', '၂', '၃', '၄', '၅', '၆', '၇', '၈', '၉'];
 
 export function parseBurmese(str) {
-  return parseNumeral(str, burmeseNumerals);
+  return parseNumeral(str, burmese);
 }
 export function toBurmese(n) {
-  return toNumeral(n, burmeseNumerals);
+  return toNumeral(n, burmese);
 }

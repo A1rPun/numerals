@@ -1,10 +1,10 @@
 import { parseNumeral, toNumeral } from './common';
 
-const arabicNumerals = ['۰', '۱', '۲', '۳', '٤', '٥', '٦', '۷', '۸', '۹'];
+const arabic = ['۰', '۱', '۲', '۳', '٤', '٥', '٦', '۷', '۸', '۹'];
 
 export function parseArabic(str) {
-  return parseNumeral(str, arabicNumerals);
+  return parseNumeral(str, arabic);
 }
 export function toArabic(n) {
-  return toNumeral(n, arabicNumerals);
+  return toNumeral(n, arabic);
 }

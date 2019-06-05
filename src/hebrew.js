@@ -1,4 +1,4 @@
-const hebrewNumerals = [
+const hebrew = [
   ['', 'א', 'ב', 'ג', 'ד', 'ה', 'ו', 'ז', 'ח', 'ט'], // ones
   ['', 'י', 'כ', 'ל', 'ם', 'ן', 'ס', 'ע', 'פ', 'צ'], // tens
   ['', 'ק', 'ר', 'ש', 'ת', 'ך', 'ם', 'ן', 'ף', 'ץ'], // hundreds
@@ -12,5 +12,5 @@ export function toHebrew(n) {
     .toString()
     .split('')
     .reverse()
-    .reduce((acc, x, i) => (i < 3 ? hebrewNumerals[i][x] : '') + acc, '');
+    .reduce((acc, x, i) => (i < hebrew.length ? hebrew[i][x] : '') + acc, '');
 }

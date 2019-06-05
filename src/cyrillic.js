@@ -12,5 +12,5 @@ export function toCyrillic(n) {
     .toString()
     .split('')
     .reverse()
-    .reduce((acc, x, i) => (i < 3 ? cyrillic[i][x] : '҂'.repeat(x)) + acc, '');
+    .reduce((acc, x, i) => (i < cyrillic.length ? cyrillic[i][x] : '҂'.repeat(x)) + acc, '');
 }

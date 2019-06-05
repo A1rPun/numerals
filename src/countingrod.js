@@ -1,4 +1,4 @@
-const countingRodNumerals = [
+const countingRod = [
   ['o', '𝍩', '𝍪', '𝍫', '𝍬', '𝍭', '𝍮', '𝍯', '𝍰', '𝍱'],
   ['o', '𝍠', '𝍡', '𝍢', '𝍣', '𝍤', '𝍥', '𝍦', '𝍧', '𝍨'],
 ];
@@ -14,6 +14,6 @@ export function toCountingRod(n) {
   return n
     .toString()
     .split('')
-    .map(x => countingRodNumerals[(swap ^= 1)][x])
+    .map(x => countingRod[(swap ^= 1)][x])
     .join('');
 }
