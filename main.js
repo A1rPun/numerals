@@ -12,6 +12,7 @@ export * from './src/countingrod.js';
 export * from './src/cyrillic.js';
 export * from './src/devanagari.js';
 export * from './src/duodecimal.js';
+export * from './src/egyptian.js';
 export * from './src/etruscan.js';
 export * from './src/glagolitic.js';
 export * from './src/gujarati.js';

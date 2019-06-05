@@ -18,6 +18,7 @@
 - cyrillic
 - devanagari
 - duodecimal
+- egyptian
 - etruscan
 - glagolitic
 - gujarati
@@ -54,7 +55,6 @@
 - Abjad https://en.wikipedia.org/wiki/Abjad_numerals
 - Ancient greek
 - Brahmi https://en.wikipedia.org/wiki/Brahmi_numerals
-- Egyptian https://en.wikipedia.org/wiki/Egyptian_numerals
 - Ge'ez https://en.wikipedia.org/wiki/Ge%CA%BDez_script#Numerals
 - Maya https://en.wikipedia.org/wiki/Maya_numerals
 - Phoenician https://en.wikipedia.org/wiki/Phoenician_alphabet#Numerals

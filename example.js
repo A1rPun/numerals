@@ -13,6 +13,7 @@ const {
   toCyrillic,
   toDevanagari,
   toDuodecimal,
+  toEgyptian,
   toEtruscan,
   toGlagolitic,
   toGujarati,
@@ -49,6 +50,7 @@ log('Counting Rod', toCountingRod(input));
 log('Cyrillic', toCyrillic(input));
 log('Devanagari', toDevanagari(input));
 log('Duodecimal', toDuodecimal(input));
+log('Egyptian', toEgyptian(input));
 // log('Etruscan', toEtruscan(input));
 log('Glagolitic', toGlagolitic(input));
 log('Gujarati', toGujarati(input));
