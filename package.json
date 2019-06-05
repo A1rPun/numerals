@@ -1,0 +1,31 @@
+{
+  "name": "numerals",
+  "version": "0.0.1",
+  "description": "Numerals of the world",
+  "main": "index.js",
+  "files": ["index.js"],
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "numerals",
+    "numeral",
+    "system",
+    "western",
+    "eastern",
+    "arabic",
+    "indian",
+    "roman",
+    "egyptian",
+    "babylonian",
+    "maya"
+  ],
+  "author": "A1rPun",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
+}
