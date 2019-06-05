@@ -6,7 +6,7 @@
 
 - aegean
 - arabic eastern
-- asian eastern (chinese, japanese, korean)
+- asian eastern (chinese, japanese, korean, vietnamese)
 - asian formal
 - attic (greek, herodianic, acrophonic)
 - babylonian
@@ -23,6 +23,7 @@
 - ge'ez
 - georgian
 - glagolitic
+- greek (ionic, ionian, milesian, alexandrian)
 - gujarati
 - gurmukhi
 - hebrew
@@ -44,6 +45,7 @@
 
 ## TODO
 
+- https://www.convert-me.com/en/convert/hex_octal_binary_roman/numdec.html?u=numdec&v=1
 - https://en.wikipedia.org/wiki/List_of_numeral_system_topics
 - https://en.wikipedia.org/wiki/List_of_numbers_in_various_languages
 - Implement -> throw Error('Not implemented');
@@ -53,9 +55,9 @@
 ### Systems
 
 - Abjad https://en.wikipedia.org/wiki/Abjad_numerals
-- Ancient greek
 - Brahmi https://en.wikipedia.org/wiki/Brahmi_numerals
 - Maya https://en.wikipedia.org/wiki/Maya_numerals
+- Roman -> apostrophus, vinculum
 
 ```javascript
 const brahmi = [
