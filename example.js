@@ -21,6 +21,7 @@ const {
   toGurmukhi,
   toHebrew,
   toKannada,
+  toKharosthi,
   toKhmer,
   toLao,
   toMalayalam,
@@ -59,6 +60,7 @@ log('Gujarati', toGujarati(input));
 log('Gurmukhi', toGurmukhi(input));
 log('Hebrew', toHebrew(input));
 log('Kannada', toKannada(input));
+log('Kharosthi', toKharosthi(input));
 log('Khmer', toKhmer(input));
 log('Lao', toLao(input));
 log('Malayalam', toMalayalam(input));

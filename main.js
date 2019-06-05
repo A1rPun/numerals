@@ -20,6 +20,7 @@ export * from './src/gujarati.js';
 export * from './src/gurmukhi.js';
 export * from './src/hebrew.js';
 export * from './src/kannada.js';
+export * from './src/kharosthi.js';
 export * from './src/khmer.js';
 export * from './src/lao.js';
 export * from './src/malayalam.js';

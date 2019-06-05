@@ -26,6 +26,7 @@
 - gurmukhi
 - hebrew
 - kannada
+- kharosthi
 - khmer
 - lao
 - malayalam
@@ -54,6 +55,7 @@
 - parseGeorgian
 - parseGlagolitic
 - parseHebrew
+- parseKharosthi
 - parseTallyMarks
 
 ### Systems
@@ -72,7 +74,6 @@ const brahmi = [
   ['𑁛', '𑁜', '𑁝', '𑁞', '𑁟', '𑁠', '𑁡', '𑁢', '𑁣'],
   ['𑁤', '𑁥'],
 ];
-const kharosthi = ['𐩀', '𐩁', '𐩂', '𐩃', '𐩄', '𐩅', '𐩆', '𐩇']; // 1 2 3 4 10 20 100 1000
 ```
 
 ### Improvements
@@ -84,4 +85,4 @@ const kharosthi = ['𐩀', '𐩁', '𐩂', '𐩃', '𐩄', '𐩅', '𐩆', '𐩇
 - Tally marks - better implementation
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲
 - Duodecimal - Fallback on ⵒ/Ɛ or X/E
-- Roman / Cyrillic String.repeat need better implementation
+- Roman / Cyrillic / Kharosthi String.repeat need better implementation
