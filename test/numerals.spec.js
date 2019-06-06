@@ -5,6 +5,7 @@ import {
   toAegean,
   toBabylonian,
   toBijective,
+  toGreek,
   toRoman,
 } from '../main.js';
 
@@ -41,6 +42,17 @@ describe('Babylonian', () => {
 //     })
 //   );
 // });
+
+describe('Greek', () => {
+  it('should convert 0 to an empty string', () => {
+    expect(toGreek(0)).toBe('');
+  });
+  it('should have the correct keraia', () => {
+    expect(toGreek(818)).toBe('ωιηʹ');
+    expect(toGreek(818000)).toBe('͵ωιη');
+    expect(toGreek(818818)).toBe('͵ωιη ωιηʹ');
+  });
+});
 
 // describe('Roman', () => {
 //   // Passes all tests 1-9999

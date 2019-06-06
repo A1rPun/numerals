@@ -4,48 +4,51 @@
 
 ## Supported systems
 
-- aegean
-- arabic eastern
-- armenian
-- asian eastern (chinese, japanese, korean, vietnamese)
-- asian formal
-- attic (greek, herodianic, acrophonic)
-- babylonian
-- bengali
-- bijective
-- burmese
-- chuvash
-- counting rods
-- cyrillic
-- devanagari
-- duodecimal
-- egyptian
-- etruscan
-- ge'ez
-- georgian
-- glagolitic
-- greek (ionic, ionian, milesian, alexandrian)
-- gujarati
-- gurmukhi
-- hebrew
-- kannada
-- kharosthi
-- khmer
-- lao
-- malayalam
-- mongolian
-- odia
-- persian (dari, pashto)
-- phoenician
-- roman
-- tally marks
-- tamil
-- telugu
-- thai
-- tibetan
+System | Range | Description
+--- | --- | ---
+aegean | 1-99999 |
+arabic eastern | ? |
+armenian | ? |
+asian eastern (chinese, japanese, korean, vietnamese) | ? |
+asian formal | ? |
+attic (greek, herodianic, acrophonic) | ? |
+babylonian | ? |
+bengali | ? |
+bijective | 1-Infinite |
+burmese | ? |
+chuvash | ? |
+counting rods | ? |
+cyrillic | ? |
+devanagari | ? |
+duodecimal | ? |
+egyptian | ? |
+etruscan | ? |
+ge'ez | ? |
+georgian | ? |
+glagolitic | ? |
+greek (ionic, ionian, milesian, alexandrian) | 1-999999 |
+gujarati | ? |
+gurmukhi | ? |
+hebrew | ? |
+kannada | ? |
+kharosthi | ? |
+khmer | ? |
+lao | ? |
+malayalam | ? |
+mongolian | ? |
+odia | ? |
+persian (dari, pashto) | ? |
+phoenician | ? |
+roman | 1-9999 |
+tally marks | ? |
+tamil | ? |
+telugu | ? |
+thai | ? |
+tibetan | ? |
 
 ## TODO
 
+- https://courses.lumenlearning.com/waymakermath4libarts/chapter/the-hindu-arabic-number-system/
 - https://www.convert-me.com/en/convert/hex_octal_binary_roman/numdec.html?u=numdec&v=1
 - https://en.wikipedia.org/wiki/List_of_numbers_in_various_languages
 - Implement -> throw Error('Not implemented');
@@ -76,6 +79,7 @@ const brahmi = [
 - Ge'ez - ፼ = 10000
 - Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲
+- Phoenician - Find out why the browser output (correct) differs from nodejs (wrong)
+- Roman / Cyrillic / Kharosthi String.repeat need better implementation
 - Tally marks - better implementation /|||| /||
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲
-- Roman / Cyrillic / Kharosthi String.repeat need better implementation
