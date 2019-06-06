@@ -20,6 +20,7 @@ const {
   toGeorgian,
   toGlagolitic,
   toGreek,
+  toGreekModern,
   toGujarati,
   toGurmukhi,
   toHebrew,
@@ -62,7 +63,8 @@ log('Etruscan', toEtruscan(input));
 log('Geez', toGeez(input));
 log('Georgian', toGeorgian(input));
 log('Glagolitic', toGlagolitic(input));
-// log('Greek', toGreek(input));
+log('Greek', toGreek(input));
+log('Greek Modern', toGreekModern(input));
 log('Gujarati', toGujarati(input));
 log('Gurmukhi', toGurmukhi(input));
 log('Hebrew', toHebrew(input));

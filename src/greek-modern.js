@@ -1,7 +1,7 @@
-const greek = [
-  ['', 'α', 'β', 'γ', 'δ', 'ε', 'ϝ', 'ζ', 'η', 'θ'],
-  ['', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ϙ'],
-  ['', 'ρ', 'σ', 'τ', 'υ', 'φ', 'χ', 'ψ', 'ω', 'ϡ'],
+const modernGreek = [
+  ['', 'Α', 'Β', 'Γ', 'Δ', 'Ε', 'Ϛ', 'Ζ', 'Η', 'Θ'],
+  ['', 'Ι', 'Κ', 'Λ', 'Μ', 'N', 'Ξ', 'Ο', 'Π', 'Ϟ'],
+  ['', 'Ρ', 'Σ', 'Τ', 'Υ', 'Φ', 'Χ', 'Ψ', 'Ω', 'Ϡ'],
 ];
 const keraia = 'ʹ';
 const keraia_thousand = '͵';
@@ -10,13 +10,13 @@ function toGreekNumeral(n) {
   return n
     .split('')
     .reverse()
-    .reduce((acc, x, i) => greek[i][x] + acc, '');
+    .reduce((acc, x, i) => modernGreek[i][x] + acc, '');
 }
 
-export function parseGreek(str) {
+export function parseGreekModern(str) {
   throw Error('Not implemented');
 }
-export function toGreek(n = 0) {
+export function toGreekModern(n = 0) {
   if (n < 1 || n > 999999) return '';
   const thousands = Math.floor(n / 1000).toString();
   const ones = (n - thousands * 1000).toString();
