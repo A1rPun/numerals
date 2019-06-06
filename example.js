@@ -8,6 +8,7 @@ const {
   toBabylonian,
   toBengali,
   toBijective,
+  toBraille,
   toBurmese,
   toChuvash,
   toCountingRod,
@@ -52,6 +53,7 @@ log('Attic', toAttic(input));
 log('Babylonian', toBabylonian(input));
 log('Bengali', toBengali(input));
 log('Bijective', toBijective(input));
+log('Braille', toBraille(input));
 log('Burmese', toBurmese(input));
 log('Chuvash', toChuvash(input));
 log('Counting Rod', toCountingRod(input));

@@ -7,6 +7,7 @@ export * from './src/attic.js';
 export * from './src/babylonian.js';
 export * from './src/bengali.js';
 export * from './src/bijective.js';
+export * from './src/braille.js';
 export * from './src/burmese.js';
 export * from './src/chuvash.js';
 export * from './src/countingrod.js';
