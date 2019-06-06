@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const tibetan = ['༠', '༡', '༢', '༣', '༤', '༥', '༦', '༧', '༨', '༩'];
-
-export function parseTibetan(str) {
-  return parseNumeral(str, tibetan);
-}
-export function toTibetan(n) {
-  return toNumeral(n, tibetan);
-}
+export const {
+  parse: parseTibetan,
+  to: toTibetan,
+} = createNumeral(['༠', '༡', '༢', '༣', '༤', '༥', '༦', '༧', '༨', '༩']);

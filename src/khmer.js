@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const khmer = ['០', '១', '២', '៣', '៤', '៥', '៦', '៧', '៨', '៩'];
-
-export function parseKhmer(str) {
-  return parseNumeral(str, khmer);
-}
-export function toKhmer(n) {
-  return toNumeral(n, khmer);
-}
+export const {
+  parse: parseKhmer,
+  to: toKhmer,
+} = createNumeral(['០', '១', '២', '៣', '៤', '៥', '៦', '៧', '៨', '៩']);

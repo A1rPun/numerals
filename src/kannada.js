@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const kannada = ['೦', '೧', '೨', '೩', '೪', '೫', '೬', '೭', '೮', '೯'];
-
-export function parseKannada(str) {
-  return parseNumeral(str, kannada);
-}
-export function toKannada(n) {
-  return toNumeral(n, kannada);
-}
+export const {
+  parse: parseKannada,
+  to: toKannada,
+} = createNumeral(['೦', '೧', '೨', '೩', '೪', '೫', '೬', '೭', '೮', '೯']);

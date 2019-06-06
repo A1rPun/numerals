@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const telugu = ['౦', '౧', '౨', '౩', '౪', '౫', '౬', '౭', '౮', '౯'];
-
-export function parseTelugu(str) {
-  return parseNumeral(str, telugu);
-}
-export function toTelugu(n) {
-  return toNumeral(n, telugu);
-}
+export const {
+  parse: parseTelugu,
+  to: toTelugu,
+} = createNumeral(['౦', '౧', '౨', '౩', '౪', '౫', '౬', '౭', '౮', '౯']);

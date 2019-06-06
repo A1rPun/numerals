@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const tamil = ['௦', '௧', '௨', '௩', '௪', '௫', '௬', '௭', '௮', '௯'];
-
-export function parseTamil(str) {
-  return parseNumeral(str, tamil);
-}
-export function toTamil(n) {
-  return toNumeral(n, tamil);
-}
+export const {
+  parse: parseTamil,
+  to: toTamil,
+} = createNumeral(['௦', '௧', '௨', '௩', '௪', '௫', '௬', '௭', '௮', '௯']);

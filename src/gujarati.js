@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const gujarati = ['૦', '૧', '૨', '૩', '૪', '૫', '૬', '૭', '૮', '૯'];
-
-export function parseGujarati(str) {
-  return parseNumeral(str, gujarati);
-}
-export function toGujarati(n) {
-  return toNumeral(n, gujarati);
-}
+export const {
+  parse: parseGujarati,
+  to: toGujarati,
+} = createNumeral(['૦', '૧', '૨', '૩', '૪', '૫', '૬', '૭', '૮', '૯']);

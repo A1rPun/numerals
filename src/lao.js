@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const lao = ['໐', '໑', '໒', '໓', '໔', '໕', '໖', '໗', '໘', '໙'];
-
-export function parseLao(str) {
-  return parseNumeral(str, lao);
-}
-export function toLao(n) {
-  return toNumeral(n, lao);
-}
+export const {
+  parse: parseLao,
+  to: toLao,
+} = createNumeral(['໐', '໑', '໒', '໓', '໔', '໕', '໖', '໗', '໘', '໙']);

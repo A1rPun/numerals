@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const arabic = ['۰', '۱', '۲', '۳', '٤', '٥', '٦', '۷', '۸', '۹'];
-
-export function parseArabic(str) {
-  return parseNumeral(str, arabic);
-}
-export function toArabic(n) {
-  return toNumeral(n, arabic);
-}
+export const {
+  parse: parseArabic,
+  to: toArabic,
+} = createNumeral(['۰', '۱', '۲', '۳', '٤', '٥', '٦', '۷', '۸', '۹']);

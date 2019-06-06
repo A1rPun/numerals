@@ -1,10 +1,6 @@
-import { parseNumeral, toNumeral } from './common';
+import { createNumeral } from './common';
 
-const odia = ['୦', '୧', '୨', '୩', '୪', '୫', '୬', '୭', '୮', '୯'];
-
-export function parseOdia(str) {
-  return parseNumeral(str, odia);
-}
-export function toOdia(n) {
-  return toNumeral(n, odia);
-}
+export const {
+  parse: parseOdia,
+  to: toOdia,
+} = createNumeral(['୦', '୧', '୨', '୩', '୪', '୫', '୬', '୭', '୮', '୯']);
