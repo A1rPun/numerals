@@ -1,4 +1,5 @@
 const {
+  toAbjad,
   toAegean,
   toArabic,
   toArmenian,
@@ -44,6 +45,7 @@ const {
 const input = (typeof process !== 'undefined' && process.argv[2]) || 29;
 const log = (name, result) => console.log(name.padEnd(15), result);
 
+log('Abjad', toAbjad(input));
 log('Aegean', toAegean(input));
 log('Arabic', toArabic(input));
 log('Armenian', toArmenian(input));

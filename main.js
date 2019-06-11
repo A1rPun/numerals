@@ -1,3 +1,4 @@
+export * from './src/abjad.js';
 export * from './src/aegean.js';
 export * from './src/arabic-east.js';
 export * from './src/armenian.js';
