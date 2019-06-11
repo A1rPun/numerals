@@ -4,55 +4,56 @@
 
 ## Supported systems
 
-> Infinite = accurate till Number.MAX_SAFE_INTEGER
 
-System | Range | Description
+System | Range | 42 Description
 --- | --- | ---
-abjad | 1 - 999 |
-aegean | 1 - 99999 |
-arabic eastern | 0 - Infinite |
-armenian | 1 - 9999 |
-asian eastern |  | chinese, japanese, korean, vietnamese
-attic | 1 - 99999 | herodianic, acrophonic
-babylonian | 0 - Infinite |
-bengali | 0 - Infinite |
-bijective | 1 - Infinite |
-braille | 0 - Infinite |
-burmese | 0 - Infinite |
-chuvash | 1 - 9999 |
-counting rods | 1 - Infinite |
-cyrillic | 1 - 9999 |
-devanagari | 0 - Infinite |
-duodecimal | -Infinite - Infinite |
-egyptian | 1 - 9999999 |
-etruscan | 1 - 999 |
-ge'ez | 1 - 999 |
-georgian | 1 - 99999 |
-glagolitic | 1 - 6999 |
-greek | 1 - 999999 | alphabetic, ionic, ionian, milesian, alexandrian
-gujarati | 0 - Infinite |
-gurmukhi | 0 - Infinite |
-hebrew | 1 - 999 |
-kannada | 0 - Infinite |
-kharosthi | 1 - 9999 |
-khmer | 0 - Infinite |
-lao | 0 - Infinite |
-malayalam | 0 - Infinite |
-mongolian | 0 - Infinite |
-odia | 0 - Infinite |
-persian | 0 - Infinite | dari, pashto
-phoenician | 1 - 999 |
-roman | 1 - 9999 |
+abjad | 1 - 999 | مب
+aegean | 1 - 99999 | 𐄓𐄈
+arabic eastern | 0 - Infinite | ٤۲
+armenian | 1 - 9999 | ԽԲ
+asian eastern |  | 四二 chinese, japanese, korean, vietnamese
+attic | 1 - 99999 | ΔΔΔΔII herodianic, acrophonic
+babylonian | 0 - Infinite | 𒑩𒐖
+bengali | 0 - Infinite | ৪২
+bijective | 1 - Infinite | AP
+braille | 0 - Infinite | ⠼⠙⠃
+burmese | 0 - Infinite | ၄၂
+chuvash | 1 - 9999 | IIXXXX
+counting rods | 1 - Infinite | 𝍣𝍪
+cyrillic | 1 - 9999 | МВ
+devanagari | 0 - Infinite | ४२
+duodecimal | All | 42
+egyptian | 1 - 9999999 | 𓎆𓎆𓎆𓎆𓏺𓏺
+etruscan | 1 - 999 | 𐌠𐌠𐌢𐌢𐌢𐌢
+ge'ez | 1 - 999 | ፵፪
+georgian | 1 - 99999 | მბ
+glagolitic | 1 - 6999 | ⰍⰁ
+greek | 1 - 999999 | μβʹ alphabetic, ionic, ionian, milesian, alexandrian
+gujarati | 0 - Infinite | ૪૨
+gurmukhi | 0 - Infinite | ੪੨
+hebrew | 1 - 999 | םב
+kannada | 0 - Infinite | ೪೨
+kharosthi | 1 - 9999 | 𐩅𐩅𐩁
+khmer | 0 - Infinite | ៤២
+lao | 0 - Infinite | ໔໒
+malayalam | 0 - Infinite | ൪൨
+mongolian | 0 - Infinite | ᠔᠒
+odia | 0 - Infinite | ୪୨
+persian | 0 - Infinite | ۴۲ dari, pashto
+phoenician | 1 - 999 | 𐤘𐤘𐤚
+roman | 1 - 9999 | XLII
 tally marks |  |
-tamil | 0 - Infinite |
-telugu | 0 - Infinite |
-thai | 0 - Infinite |
-tibetan | 0 - Infinite |
+tamil | 0 - Infinite | ௪௨
+telugu | 0 - Infinite | ౪౨
+thai | 0 - Infinite | ๔๒
+tibetan | 0 - Infinite | ༤༢
+
+> Infinite = accurate till Number.MAX_SAFE_INTEGER
+> All = All numbers supported
 
 ## TODO
 
 - https://courses.lumenlearning.com/waymakermath4libarts/chapter/the-hindu-arabic-number-system/
-- https://www.convert-me.com/en/convert/hex_octal_binary_roman/numdec.html?u=numdec&v=1
 - https://en.wikipedia.org/wiki/List_of_numbers_in_various_languages
 - Implement -> throw Error('Not implemented');
 - Fractions for some languages
