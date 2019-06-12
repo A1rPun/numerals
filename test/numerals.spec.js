@@ -1,7 +1,9 @@
 import {
+  parseAbjad,
   parseAegean,
   parseBijective,
   parseRoman,
+  toAbjad,
   toAegean,
   toBabylonian,
   toBijective,
@@ -15,6 +17,14 @@ function testNumerals(fn) {
   const testArray = Array.from(Array(9999), (_, i) => i + 1);
   testArray.forEach(i => fn(i));
 }
+
+describe('Abjad', () => {
+  it('should convert a text to a number', () => {
+    const a786 = 'بسم الله الرحمن الرحيم';
+    expect(parseAbjad(a786)).toBe(786);
+    expect(toAbjad(786)).toBe('ذفو');
+  });
+});
 
 // describe('Aegean', () => {
 //   // Passes all tests 1-9999
