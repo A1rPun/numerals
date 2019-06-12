@@ -16,7 +16,7 @@ attic | 1 - 99999 | ΔΔΔΔII herodianic, acrophonic
 babylonian | 0 - Infinite | 𒑩𒐖
 bengali | 0 - Infinite | ৪২
 bijective | 1 - Infinite | AP
-braille | 0 - Infinite | ⠼⠙⠃
+braille | All | ⠼⠙⠃
 burmese | 0 - Infinite | ၄၂
 chuvash | 1 - 9999 | IIXXXX
 counting rods | 1 - Infinite | 𝍣𝍪
