@@ -4,9 +4,16 @@ const countingRod = [
 ];
 
 export function parseCountingRod(str) {
+  throw Error('Not implemented');
+  // TODO: Unicode fix
   return +str
     .split('')
-    .map(x => numerals.indexOf(x))
+    .map(x => {
+      const vertical = countingRod[0].indexOf(x);
+      if (~vertical) return vertical;
+      const horizontal = countingRod[1].indexOf(x);
+      return ~horizontal ? horizontal : '';
+    })
     .join('');
 }
 export function toCountingRod(n) {
