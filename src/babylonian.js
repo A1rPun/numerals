@@ -24,6 +24,7 @@
 
 const baby = [['', '𒐕', '𒐖', '𒐈', '𒐉', '𒐊', '𒐋', '𒑂', '𒑄', '𒑆'], ['', '𒌋', '𒎙', '𒌍', '𒑩', '𒑪']];
 const zero = ' ';
+const sexagesimal = 60;
 
 function toBaby(n) {
   return n
@@ -39,5 +40,5 @@ export function parseBabylonian(str) {
   throw Error('Not implemented');
 }
 export function toBabylonian(n) {
-  return (n > 59 ? toBabylonian(Math.floor(n / 60)) : '') + toBaby(n % 60);
+  return (n >= sexagesimal ? toBabylonian(Math.floor(n / sexagesimal)) : '') + toBaby(n % sexagesimal);
 }

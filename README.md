@@ -22,7 +22,7 @@ chuvash | 1 - 9999 | IIXXXX |
 counting rods | 1 - Infinite | 𝍣𝍪 |
 cyrillic | 1 - 9999 | МВ |
 devanagari | 0 - Infinite | ४२ |
-duodecimal | All | 42 |
+duodecimal | All | 36 |
 egyptian | 1 - 9999999 | 𓎆𓎆𓎆𓎆𓏺𓏺 |
 etruscan | 1 - 999 | 𐌠𐌠𐌢𐌢𐌢𐌢 |
 ge'ez | 1 - 999 | ፵፪ |

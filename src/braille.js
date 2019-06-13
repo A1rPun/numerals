@@ -1,21 +1,21 @@
 const numberIndicator = '⠼';
-const dash = '-';
+const negative = '-';
 const dot = '.';
-const brailleDash = '⠤';
+const brailleNegative = '⠤';
 const brailleDot = '⠲';
 const braille = ['⠚', '⠁', '⠃', '⠉', '⠙', '⠑', '⠋', '⠛', '⠓', '⠊'];
 
 export function parseBraille(str) {
-  const negative = str[0] === brailleDash;
+  const isNegative = str[0] === brailleNegative;
   str = str
-    .slice(negative ? 2 : 1)
+    .slice(isNegative ? 2 : 1)
     .split('')
     .map(x => {
       const index = braille.indexOf(x);
       return x === brailleDot ? dot : index;
     })
     .join('');
-  return parseFloat((negative ? dash : '') + str, 10);
+  return parseFloat((isNegative ? negative : '') + str, 10);
 }
 export function toBraille(n) {
   const num = n
@@ -23,5 +23,5 @@ export function toBraille(n) {
     .split('')
     .map(x => (x === dot ? brailleDot : braille[x] || ''))
     .join('');
-  return `${n < 0 ? brailleDash : ''}${numberIndicator}${num}`;
+  return `${n < 0 ? brailleNegative : ''}${numberIndicator}${num}`;
 }

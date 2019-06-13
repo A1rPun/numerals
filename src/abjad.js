@@ -5,7 +5,13 @@ const abjad = [
 ];
 
 export function parseAbjad(str) {
-  throw Error('Not implemented');
+  const abjadDict = abjad.reduce((acc, x, i) => {
+    return x.reduce((acc, y, j) => {
+      acc[y] = j * (i ? 10 ** i : 1);
+      return acc;
+    }, acc);
+  }, {});
+  return str.split('').reduce((acc, x) => acc + (abjadDict[x] || 0), 0);
 }
 export function toAbjad(n) {
   return n

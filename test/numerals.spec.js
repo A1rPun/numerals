@@ -15,6 +15,7 @@ import {
 } from '../main.js';
 
 const zero = 0;
+const number = 29;
 
 function testNumerals(fn) {
   const testArray = Array.from(Array(9999), (_, i) => i + 1);
@@ -23,13 +24,14 @@ function testNumerals(fn) {
 
 describe('Abjad', () => {
   it('should convert a number to abjad numerals', () => {
+    expect(toAbjad(66)).toBe('سو');
     expect(toAbjad(786)).toBe('ذفو');
   });
 
-  // it('should convert a text to a number', () => {
-  //   const allah = 'الله';
-  //   expect(parseAbjad(allah)).toBe(66);
-  // });
+  it('should convert text to a number', () => {
+    const allah = 'ألله';
+    expect(parseAbjad(allah)).toBe(66);
+  });
 });
 
 // describe('Aegean', () => {
@@ -79,6 +81,12 @@ describe('Greek', () => {
 });
 
 describe('Mayan', () => {
+  it('should convert a number', () => {
+    const to = toMayan(number);
+    const parse = parseMayan(to);
+    console.log(to, parse);
+    expect(parse).toBe(number);
+  });
   it('should convert MAX_SAFE_INTEGER', () => {
     expect(parseMayan(toMayan(Number.MAX_SAFE_INTEGER))).toBe(Number.MAX_SAFE_INTEGER);
   });

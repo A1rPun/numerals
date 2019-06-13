@@ -14,10 +14,11 @@ export function parseMayan(str) {
     .reverse()
     .reduce(
       (acc, x, i) =>
-        acc + x === mayanZero
+        acc +
+        (x === mayanZero
           ? 0
           : x.split('').reduce((a, y) => a + (y === rod ? rodNumeral : mayan.indexOf(y)), 0) *
-            (i ? vigesimal ** i : 1),
+            (i ? vigesimal ** i : 1)),
       0
     );
 }
