@@ -1,13 +1,16 @@
 import {
   parseAbjad,
   parseAegean,
+  parseBabylonian,
   parseBijective,
+  parseMayan,
   parseRoman,
   toAbjad,
   toAegean,
   toBabylonian,
   toBijective,
   toGreek,
+  toMayan,
   toRoman,
 } from '../main.js';
 
@@ -19,11 +22,14 @@ function testNumerals(fn) {
 }
 
 describe('Abjad', () => {
-  it('should convert a text to a number', () => {
-    const a786 = 'بسم الله الرحمن الرحيم';
-    expect(parseAbjad(a786)).toBe(786);
+  it('should convert a number to abjad numerals', () => {
     expect(toAbjad(786)).toBe('ذفو');
   });
+
+  // it('should convert a text to a number', () => {
+  //   const allah = 'الله';
+  //   expect(parseAbjad(allah)).toBe(66);
+  // });
 });
 
 // describe('Aegean', () => {
@@ -44,6 +50,9 @@ describe('Babylonian', () => {
     expect(toBabylonian(23 * 60)).toBe('𒎙𒐈 ');
     expect(toBabylonian(23 * 60 * 60)).toBe('𒎙𒐈  ');
   });
+  // it('should convert MAX_SAFE_INTEGER', () => {
+  //   expect(parseBabylonian(toBabylonian(Number.MAX_SAFE_INTEGER))).toBe(Number.MAX_SAFE_INTEGER);
+  // });
 });
 
 // describe('Bijective', () => {
@@ -66,6 +75,12 @@ describe('Greek', () => {
     expect(toGreek(818)).toBe('ωιηʹ');
     expect(toGreek(818000)).toBe('͵ωιη');
     expect(toGreek(818818)).toBe('͵ωιη ωιηʹ');
+  });
+});
+
+describe('Mayan', () => {
+  it('should convert MAX_SAFE_INTEGER', () => {
+    expect(parseMayan(toMayan(Number.MAX_SAFE_INTEGER))).toBe(Number.MAX_SAFE_INTEGER);
   });
 });
 

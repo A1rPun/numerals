@@ -5,48 +5,49 @@
 ## Supported systems
 
 
-System | Range | 42 Description
+System | Range | Example | Description
 --- | --- | ---
-abjad | 1 - 999 | مب
-aegean | 1 - 99999 | 𐄓𐄈
-arabic eastern | 0 - Infinite | ٤۲
-armenian | 1 - 9999 | ԽԲ
-asian eastern |  | 四二 chinese, japanese, korean, vietnamese
-attic | 1 - 99999 | ΔΔΔΔII herodianic, acrophonic
-babylonian | 0 - Infinite | 𒑩𒐖
-bengali | 0 - Infinite | ৪২
-bijective | 1 - Infinite | AP
-braille | All | ⠼⠙⠃
-burmese | 0 - Infinite | ၄၂
-chuvash | 1 - 9999 | IIXXXX
-counting rods | 1 - Infinite | 𝍣𝍪
-cyrillic | 1 - 9999 | МВ
-devanagari | 0 - Infinite | ४२
-duodecimal | All | 42
-egyptian | 1 - 9999999 | 𓎆𓎆𓎆𓎆𓏺𓏺
-etruscan | 1 - 999 | 𐌠𐌠𐌢𐌢𐌢𐌢
-ge'ez | 1 - 999 | ፵፪
-georgian | 1 - 99999 | მბ
-glagolitic | 1 - 6999 | ⰍⰁ
-greek | 1 - 999999 | μβʹ alphabetic, ionic, ionian, milesian, alexandrian
-gujarati | 0 - Infinite | ૪૨
-gurmukhi | 0 - Infinite | ੪੨
-hebrew | 1 - 999 | םב
-kannada | 0 - Infinite | ೪೨
-kharosthi | 1 - 9999 | 𐩅𐩅𐩁
-khmer | 0 - Infinite | ៤២
-lao | 0 - Infinite | ໔໒
-malayalam | 0 - Infinite | ൪൨
-mongolian | 0 - Infinite | ᠔᠒
-odia | 0 - Infinite | ୪୨
-persian | 0 - Infinite | ۴۲ dari, pashto
-phoenician | 1 - 999 | 𐤘𐤘𐤚
-roman | 1 - 9999 | XLII
-tally marks |  |
-tamil | 0 - Infinite | ௪௨
-telugu | 0 - Infinite | ౪౨
-thai | 0 - Infinite | ๔๒
-tibetan | 0 - Infinite | ༤༢
+abjad | 1 - 999 | مب |
+aegean | 1 - 99999 | 𐄓𐄈 |
+arabic eastern | 0 - Infinite | ٤۲ |
+armenian | 1 - 9999 | ԽԲ |
+asian eastern |  | 四二 | chinese, japanese, korean, vietnamese
+attic | 1 - 99999 | ΔΔΔΔII | herodianic, acrophonic
+babylonian | 0 - Infinite | 𒑩𒐖 |
+bengali | 0 - Infinite | ৪২ |
+bijective | 1 - Infinite | AP |
+braille | All | ⠼⠙⠃ |
+burmese | 0 - Infinite | ၄၂ |
+chuvash | 1 - 9999 | IIXXXX |
+counting rods | 1 - Infinite | 𝍣𝍪 |
+cyrillic | 1 - 9999 | МВ |
+devanagari | 0 - Infinite | ४२ |
+duodecimal | All | 42 |
+egyptian | 1 - 9999999 | 𓎆𓎆𓎆𓎆𓏺𓏺 |
+etruscan | 1 - 999 | 𐌠𐌠𐌢𐌢𐌢𐌢 |
+ge'ez | 1 - 999 | ፵፪ |
+georgian | 1 - 99999 | მბ |
+glagolitic | 1 - 6999 | ⰍⰁ |
+greek | 1 - 999999 | μβʹ | alphabetic, ionic, ionian, milesian, alexandrian
+gujarati | 0 - Infinite | ૪૨ |
+gurmukhi | 0 - Infinite | ੪੨ |
+hebrew | 1 - 999 | םב |
+kannada | 0 - Infinite | ೪೨ |
+kharosthi | 1 - 9999 | 𐩅𐩅𐩁 |
+khmer | 0 - Infinite | ៤២ |
+lao | 0 - Infinite | ໔໒ |
+malayalam | 0 - Infinite | ൪൨ |
+mayan | 0 - Infinite | ⡁ ⡁ | Using pipes and braille to mimic the script
+mongolian | 0 - Infinite | ᠔᠒ |
+odia | 0 - Infinite | ୪୨ |
+persian | 0 - Infinite | ۴۲ | dari, pashto
+phoenician | 1 - 999 | 𐤘𐤘𐤚 |
+roman | 1 - 9999 | XLII |
+tally marks |  | |
+tamil | 0 - Infinite | ௪௨ |
+telugu | 0 - Infinite | ౪౨ |
+thai | 0 - Infinite | ๔๒ |
+tibetan | 0 - Infinite | ༤༢ |
 
 > Infinite = accurate till Number.MAX_SAFE_INTEGER
 > All = All numbers supported
