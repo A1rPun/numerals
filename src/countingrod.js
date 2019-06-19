@@ -1,13 +1,14 @@
+import { normalizeString } from './common';
+
 const countingRod = [
   ['o', '𝍩', '𝍪', '𝍫', '𝍬', '𝍭', '𝍮', '𝍯', '𝍰', '𝍱'],
   ['o', '𝍠', '𝍡', '𝍢', '𝍣', '𝍤', '𝍥', '𝍦', '𝍧', '𝍨'],
 ];
 
+const surrogate = 55348;
+
 export function parseCountingRod(str) {
-  throw Error('Not implemented');
-  // TODO: Unicode fix
-  return +str
-    .split('')
+  return +normalizeString(str, surrogate)
     .map(x => {
       const vertical = countingRod[0].indexOf(x);
       if (~vertical) return vertical;

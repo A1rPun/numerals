@@ -22,3 +22,17 @@ export function toBase(n, base = 10) {
 export function parseBase(str, base = 10) {
   return parseInt(str, base);
 }
+
+export function normalizeString(str, surrogate) {
+  const charCodes = [];
+  for (let i = 0; i < str.length; i++) {
+    const charCode = str.charCodeAt(i);
+    if (charCode === surrogate) continue;
+    charCodes.push(
+      charCode > surrogate
+        ? String.fromCharCode(surrogate, charCode)
+        : String.fromCharCode(charCode)
+    );
+  }
+  return charCodes;
+}
