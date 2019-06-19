@@ -6,7 +6,7 @@
 
 
 System | Range | Example | Description
---- | --- | ---
+--- | --- | --- | ---
 abjad | 1 - 999 | مب |
 aegean | 1 - 99999 | 𐄓𐄈 |
 arabic eastern | 0 - Infinite | ٤۲ |
@@ -37,7 +37,7 @@ kharosthi | 1 - 9999 | 𐩅𐩅𐩁 |
 khmer | 0 - Infinite | ៤២ |
 lao | 0 - Infinite | ໔໒ |
 malayalam | 0 - Infinite | ൪൨ |
-mayan | 0 - Infinite | ⡁ ⡁ | Using pipes and braille to mimic the script
+maya | 0 - Infinite | ⡁ ⡁ | Using pipes and braille to mimic the script
 mongolian | 0 - Infinite | ᠔᠒ |
 odia | 0 - Infinite | ୪୨ |
 persian | 0 - Infinite | ۴۲ | dari, pashto
@@ -72,11 +72,11 @@ tibetan | 0 - Infinite | ༤༢ |
 - Asian - use 10, 100, 1000 signs (https://en.wikipedia.org/wiki/Korean_numerals). 零 = 0 ?
 - Attic - Confirm `5` is `Π` instead of `Γ`
 - Chuvash - Need a better 1, 10 and 50 (50 needs to be upside down)
-- Duodecimal - Fallback on ⵒ/Ɛ or X/E
 - Ge'ez - ፼ = 10000
 - Greek - Confirm `6` is `ϝ` instead of `ϛ`. Accept numbers above 999999 (myriad) ρκγΜ δφξζ
 - Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲
+- Maya - Unicode
 - Phoenician - Find out why the browser output (correct) differs from nodejs (wrong)
 - Roman / Cyrillic / Kharosthi String.repeat need better implementation
 - Tally marks - better implementation /|||| /||

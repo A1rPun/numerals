@@ -31,7 +31,7 @@ const {
   toKhmer,
   toLao,
   toMalayalam,
-  toMayan,
+  toMaya,
   toMongolian,
   toOdia,
   toPersian,
@@ -78,7 +78,7 @@ log('Kharosthi', toKharosthi(input));
 log('Khmer', toKhmer(input));
 log('Lao', toLao(input));
 log('Malayalam', toMalayalam(input));
-log('Mayan', toMayan(input));
+log('Maya', toMaya(input));
 log('Mongolian', toMongolian(input));
 log('Odia', toOdia(input));
 log('Persian', toPersian(input));

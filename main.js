@@ -30,7 +30,7 @@ export * from './src/kharosthi.js';
 export * from './src/khmer.js';
 export * from './src/lao.js';
 export * from './src/malayalam.js';
-export * from './src/mayan.js';
+export * from './src/maya.js';
 export * from './src/mongolian.js';
 export * from './src/odia.js';
 export * from './src/persian.js';
