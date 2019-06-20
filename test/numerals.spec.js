@@ -1,102 +1,52 @@
-import {
-  parseAbjad,
-  parseAegean,
-  parseBabylonian,
-  parseBijective,
-  parseMayan,
-  parseRoman,
-  toAbjad,
-  toAegean,
-  toBabylonian,
-  toBijective,
-  toGreek,
-  toMayan,
-  toRoman,
-} from '../main.js';
+import * as numerals from '../main.js';
 
-const zero = 0;
-const number = 29;
-
-function testNumerals(fn) {
-  const testArray = Array.from(Array(9999), (_, i) => i + 1);
-  testArray.forEach(i => fn(i));
+function testNumerals(parse, to, range = 9999) {
+  const testArray = Array.from(Array(range), (_, i) => i + 1);
+  // testArray.forEach(i => it(i.toString(), () => expect(parse(to(i))).toBe(i)));
+  it(`should convert itself from 1 to ${range}`, () => {
+    testArray.forEach(i => expect(parse(to(i))).toBe(i));
+  });
 }
 
-describe('Abjad', () => {
-  it('should convert a number to abjad numerals', () => {
-    expect(toAbjad(66)).toBe('سو');
-    expect(toAbjad(786)).toBe('ذفو');
-  });
-
-  it('should convert text to a number', () => {
-    const allah = 'ألله';
-    expect(parseAbjad(allah)).toBe(66);
-  });
-});
-
-// describe('Aegean', () => {
-//   // Passes all tests 1-9999
-//   testNumerals(i =>
-//     it(i.toString(), () => {
-//       expect(parseAegean(toAegean(i))).toBe(i);
-//     })
-//   );
-// });
-
-describe('Babylonian', () => {
-  it('should convert 0 to a space', () => {
-    expect(toBabylonian(zero)).toBe(' ');
-  });
-  it('should convert 23', () => {
-    expect(toBabylonian(23)).toBe('𒎙𒐈');
-    expect(toBabylonian(23 * 60)).toBe('𒎙𒐈 ');
-    expect(toBabylonian(23 * 60 * 60)).toBe('𒎙𒐈  ');
-  });
-  // it('should convert MAX_SAFE_INTEGER', () => {
-  //   expect(parseBabylonian(toBabylonian(Number.MAX_SAFE_INTEGER))).toBe(Number.MAX_SAFE_INTEGER);
-  // });
-});
-
-// describe('Bijective', () => {
-//   // Passes all tests 1-9999
-//   testNumerals(i =>
-//     it(i.toString(), () => {
-//       expect(parseBijective(toBijective(i))).toBe(i);
-//     })
-//   );
-// });
-
-describe('Greek', () => {
-  it('should any number below 1 to an empty string', () => {
-    expect(toGreek(zero)).toBe('');
-  });
-  it('should convert any number above 999999 to an empty string', () => {
-    expect(toGreek(999999000000999999)).toBe('');
-  });
-  it('should have the correct keraia', () => {
-    expect(toGreek(818)).toBe('ωιηʹ');
-    expect(toGreek(818000)).toBe('͵ωιη');
-    expect(toGreek(818818)).toBe('͵ωιη ωιηʹ');
-  });
-});
-
-describe('Mayan', () => {
-  it('should convert a number', () => {
-    const to = toMayan(number);
-    const parse = parseMayan(to);
-    console.log(to, parse);
-    expect(parse).toBe(number);
-  });
-  it('should convert MAX_SAFE_INTEGER', () => {
-    expect(parseMayan(toMayan(Number.MAX_SAFE_INTEGER))).toBe(Number.MAX_SAFE_INTEGER);
-  });
-});
-
-// describe('Roman', () => {
-//   // Passes all tests 1-9999
-//   testNumerals(i =>
-//     it(i.toString(), () => {
-//       expect(parseRoman(toRoman(i))).toBe(i);
-//     })
-//   );
-// });
+describe('Abjad', () => testNumerals(numerals.parseAbjad, numerals.toAbjad, 999));
+describe('Aegean', () => testNumerals(numerals.parseAegean, numerals.toAegean, 99999));
+describe('Arabic', () => testNumerals(numerals.parseArabic, numerals.toArabic));
+describe('Armenian', () => testNumerals(numerals.parseArmenian, numerals.toArmenian));
+// describe('Asian', () => testNumerals(numerals.parseAsian, numerals.toAsian));
+// describe('AsianFormal', () => testNumerals(numerals.parseAsianFormal, numerals.toAsianFormal));
+// describe('Attic', () => testNumerals(numerals.parseAttic, numerals.toAttic, 99999));
+// describe('Babylonian', () => testNumerals(numerals.parseBabylonian, numerals.toBabylonian));
+describe('Bengali', () => testNumerals(numerals.parseBengali, numerals.toBengali));
+describe('Bijective', () => testNumerals(numerals.parseBijective, numerals.toBijective));
+describe('Braille', () => testNumerals(numerals.parseBraille, numerals.toBraille));
+describe('Burmese', () => testNumerals(numerals.parseBurmese, numerals.toBurmese));
+// describe('Chuvash', () => testNumerals(numerals.parseChuvash, numerals.toChuvash));
+describe('CountingRod', () => testNumerals(numerals.parseCountingRod, numerals.toCountingRod));
+describe('Cyrillic', () => testNumerals(numerals.parseCyrillic, numerals.toCyrillic));
+describe('Devanagari', () => testNumerals(numerals.parseDevanagari, numerals.toDevanagari));
+describe('Duodecimal', () => testNumerals(numerals.parseDuodecimal, numerals.toDuodecimal));
+// describe('Egyptian', () => testNumerals(numerals.parseEgyptian, numerals.toEgyptian, 9999999));
+// describe('Etruscan', () => testNumerals(numerals.parseEtruscan, numerals.toEtruscan, 999));
+// describe('Geez', () => testNumerals(numerals.parseGeez, numerals.toGeez));
+describe('Georgian', () => testNumerals(numerals.parseGeorgian, numerals.toGeorgian, 99999));
+// describe('Glagolitic', () => testNumerals(numerals.parseGlagolitic, numerals.toGlagolitic, 6999));
+// describe('Greek', () => testNumerals(numerals.parseGreek, numerals.toGreek));
+// describe('GreekModern', () => testNumerals(numerals.parseGreekModern, numerals.toGreekModern));
+describe('Gujarati', () => testNumerals(numerals.parseGujarati, numerals.toGujarati));
+describe('Gurmukhi', () => testNumerals(numerals.parseGurmukhi, numerals.toGurmukhi));
+// describe('Hebrew', () => testNumerals(numerals.parseHebrew, numerals.toHebrew, 999));
+describe('Kannada', () => testNumerals(numerals.parseKannada, numerals.toKannada));
+// describe('Kharosthi', () => testNumerals(numerals.parseKharosthi, numerals.toKharosthi));
+describe('Khmer', () => testNumerals(numerals.parseKhmer, numerals.toKhmer));
+describe('Lao', () => testNumerals(numerals.parseLao, numerals.toLao));
+describe('Malayalam', () => testNumerals(numerals.parseMalayalam, numerals.toMalayalam));
+describe('Maya', () =>  testNumerals(numerals.parseMaya, numerals.toMaya));
+describe('Mongolian', () => testNumerals(numerals.parseMongolian, numerals.toMongolian));
+describe('Odia', () => testNumerals(numerals.parseOdia, numerals.toOdia));
+describe('Persian', () => testNumerals(numerals.parsePersian, numerals.toPersian));
+// describe('Phoenician', () => testNumerals(numerals.parsePhoenician, numerals.toPhoenician, 999));
+describe('Roman', () => testNumerals(numerals.parseRoman, numerals.toRoman));
+describe('Tamil', () => testNumerals(numerals.parseTamil, numerals.toTamil));
+describe('Telugu', () => testNumerals(numerals.parseTelugu, numerals.toTelugu));
+describe('Thai', () => testNumerals(numerals.parseThai, numerals.toThai));
+describe('Tibetan', () => testNumerals(numerals.parseTibetan, numerals.toTibetan));
