@@ -22,8 +22,7 @@ function parseAsian(str) {
     .map(x => (x === asianNegative || x === dot ? x : asian[0].indexOf(x)))
     .join('');
 }
-// export function toAsian(n) {
-function toAsian(n) {
+export function toAsian(n) {
   if (!n) return asianZero;
   return n
     .toString()

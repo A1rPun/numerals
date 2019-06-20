@@ -56,15 +56,11 @@ tibetan | 0 - Infinite | ༤༢ |
 
 - https://courses.lumenlearning.com/waymakermath4libarts/chapter/the-hindu-arabic-number-system/
 - https://en.wikipedia.org/wiki/List_of_numbers_in_various_languages
-- Implement -> throw Error('Not implemented');
+- Implement -> `throw Error('Not implemented');`
+- `String.repeat` need better implementation for some languages
 - Fractions for some languages
 - Negative numbers for some languages
 - Error handling for valid input (Garbage in garbage out for now)
-
-### Systems
-
-- Maya https://en.wikipedia.org/wiki/Maya_numerals
-- Roman -> apostrophus, vinculum
 
 ### Improvements
 
@@ -74,11 +70,12 @@ tibetan | 0 - Infinite | ༤༢ |
 - Chuvash - Need a better 1, 10 and 50 (50 needs to be upside down)
 - Ge'ez - ፼ = 10000
 - Greek - Confirm `6` is `ϝ` instead of `ϛ`. Accept numbers above 999999 (myriad) ρκγΜ δφξζ
+- Greek Modern - Parse alphabetic (greek.js too)
 - Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲
 - Maya - Unicode
 - Phoenician - Find out why the browser output (correct) differs from nodejs (wrong)
-- Roman / Cyrillic / Kharosthi String.repeat need better implementation
+- Roman - Apostrophus, Vinculum
 - Tally marks - better implementation /|||| /||
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲
 
