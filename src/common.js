@@ -1,21 +1,3 @@
-export function createNumeral(numerals, negative = '-', dot = '.') {
-  return {
-    parse(str) {
-      return +str
-        .split('')
-        .map(x => (x === negative || x === dot ? x : numerals.indexOf(x)))
-        .join('');
-    },
-    to(n) {
-      return n
-        .toString()
-        .split('')
-        .map(x => (x === negative || x === dot ? x : numerals[x]))
-        .join('');
-    },
-  };
-}
-
 export function createAlphabeticNumeral(numerals, toFn) {
   return {
     parse(str) {
@@ -51,6 +33,7 @@ export function parseBase(str, base = 10) {
 }
 
 export function normalizeString(str, surrogate) {
+  if (!surrogate) return str.split('');
   const charCodes = [];
   for (let i = 0; i < str.length; i++) {
     const charCode = str.charCodeAt(i);
