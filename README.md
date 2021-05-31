@@ -61,20 +61,21 @@ tibetan | 0 - Infinite | ༤༢ |
 - Fractions for some languages
 - Negative numbers for some languages
 - Error handling for valid input (Garbage in garbage out for now)
+- Scientific notation
+- Unicode maps
 
 ### Improvements
 
 - Armenian - Writing numbers greater than 9999 is done by drawing a line over them, indicating their value is to be multiplied by 10000.
-- Asian - use 10, 100, 1000 signs (https://en.wikipedia.org/wiki/Korean_numerals). 零 = 0 ?
+- Asian - [x] Simplified - [ ] Traditional
 - Attic - Confirm `5` is `Π` instead of `Γ`
 - Chuvash - Need a better 1, 10 and 50 (50 needs to be upside down)
 - Ge'ez - ፼ = 10000
 - Greek - Confirm `6` is `ϝ` instead of `ϛ`. Accept numbers above 999999 (myriad) ρκγΜ δφξζ
 - Greek Modern - Parse alphabetic (greek.js too)
-- Hebrew - Not all numbers supported between 1-999
 - Malayalam - 10, 100, 1000 as ൰, ൱, ൲
-- Maya - Unicode
-- Phoenician - Find out why the browser output (correct) differs from nodejs (wrong)
+- Maya - Unicode (12.0) implementation
+- Phoenician - Find out why the (correct) browser output differs from nodejs (wrong) output
 - Roman - Apostrophus, Vinculum
 - Tally marks - better implementation /|||| /||
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲

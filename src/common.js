@@ -29,7 +29,7 @@ export function toBase(n, base = 10) {
   return n.toString(base).toUpperCase();
 }
 export function parseBase(str, base = 10) {
-  return parseInt(str, base);
+  return parseFloat(str, base);
 }
 
 export function normalizeString(str, surrogate) {

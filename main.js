@@ -24,4 +24,5 @@ export * from './src/kharosthi.js';
 export * from './src/maya.js';
 export * from './src/phoenician.js';
 export * from './src/roman.js';
+export * from './src/simple.js';
 export * from './src/tallymarks.js';
