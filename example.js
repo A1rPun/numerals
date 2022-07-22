@@ -25,6 +25,7 @@ const {
   toMaya,
   toPhoenician,
   toRoman,
+  toTallyMarks,
 } = require('./dist/numerals.js');
 
 const input = (typeof process !== 'undefined' && process.argv[2]) || 29;
@@ -56,3 +57,4 @@ log('Kharosthi', toKharosthi(input));
 log('Maya', toMaya(input));
 log('Phoenician', toPhoenician(input));
 log('Roman', toRoman(input));
+log('Tallymarks', input < 100 ? toTallyMarks(input) : 'Too big');

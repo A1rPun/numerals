@@ -43,7 +43,8 @@ odia | 0 - Infinite | ୪୨ |
 persian | 0 - Infinite | ۴۲ | dari, pashto
 phoenician | 1 - 999 | 𐤘𐤘𐤚 |
 roman | 1 - 9999 | XLII |
-tally marks |  | |
+tally marks | 1 - Infinite | 𝍸 |
+tally marks chinese | 1 - Infinite | 𝍶 |
 tamil | 0 - Infinite | ௪௨ |
 telugu | 0 - Infinite | ౪౨ |
 thai | 0 - Infinite | ๔๒ |
@@ -77,7 +78,6 @@ tibetan | 0 - Infinite | ༤༢ |
 - Maya - Unicode (12.0) implementation
 - Phoenician - Find out why the (correct) browser output differs from nodejs (wrong) output
 - Roman - Apostrophus, Vinculum
-- Tally marks - better implementation /|||| /||
 - Tamil - 10, 100, 1000 as ௰, ௱, ௲
 
 ## Licence

@@ -50,6 +50,7 @@ describe('Maya', () => testNumerals(numerals.parseMaya, numerals.toMaya));
 // describe('Persian', () => testNumerals(numerals.parsePersian, numerals.toPersian));
 // describe('Phoenician', () => testNumerals(numerals.parsePhoenician, numerals.toPhoenician, 999));
 describe('Roman', () => testNumerals(numerals.parseRoman, numerals.toRoman));
+describe('TallyMarks', () => testNumerals(numerals.parseTallyMarks, numerals.toTallyMarks), 999);
 // describe('Tamil', () => testNumerals(numerals.parseTamil, numerals.toTamil));
 // describe('Telugu', () => testNumerals(numerals.parseTelugu, numerals.toTelugu));
 // describe('Thai', () => testNumerals(numerals.parseThai, numerals.toThai));
