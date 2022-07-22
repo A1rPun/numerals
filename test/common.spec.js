@@ -1,4 +1,4 @@
-import { fullWidth, mathematicalBold, mathematicalMonospace } from '../src/simple.js';
+import { fullWidth, mathematicalBold, mathematicalMonospace } from '../main.js';
 
 describe('Common lib', () => {
   it('Full width', () => {
