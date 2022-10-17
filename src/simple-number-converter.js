@@ -1,4 +1,4 @@
-import { parseBase, normalizeString } from './common';
+import { parseBase, normalizeString } from './common.js';
 
 export class SimpleNumberConverter {
   // TODO: negative = 0x2d, fraction = 0x2e

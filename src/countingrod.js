@@ -1,4 +1,4 @@
-import { normalizeString } from './common';
+import { createNumeral, normalizeString } from './common.js';
 
 const countingRod = [
   ['o', '𝍩', '𝍪', '𝍫', '𝍬', '𝍭', '𝍮', '𝍯', '𝍰', '𝍱'],
@@ -7,7 +7,7 @@ const countingRod = [
 
 const surrogate = 55348;
 
-export function parseCountingRod(str) {
+function parseCountingRod(str) {
   return +normalizeString(str, surrogate)
     .map(x => {
       const vertical = countingRod[0].indexOf(x);
@@ -17,7 +17,7 @@ export function parseCountingRod(str) {
     })
     .join('');
 }
-export function toCountingRod(n) {
+function toCountingRod(n) {
   let swap = n.toString().length % 2;
   return n
     .toString()
@@ -25,3 +25,5 @@ export function toCountingRod(n) {
     .map(x => countingRod[(swap ^= 1)][x])
     .join('');
 }
+
+export default createNumeral(parseCountingRod, toCountingRod);

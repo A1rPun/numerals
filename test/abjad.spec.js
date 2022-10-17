@@ -1,13 +1,13 @@
-import { toAbjad, parseAbjad } from '../main.js';
+import { abjad } from '../numerals.js';
 
 describe('Abjad', () => {
   it('should convert a number to abjad numerals', () => {
-    expect(toAbjad(66)).toBe('سو');
-    expect(toAbjad(786)).toBe('ذفو');
+    expect(abjad.to(66)).toBe('سو');
+    expect(abjad.to(786)).toBe('ذفو');
   });
 
   it('should convert text to a number', () => {
     const allah = 'ألله';
-    expect(parseAbjad(allah)).toBe(66);
+    expect(abjad.parse(allah)).toBe(66);
   });
 });

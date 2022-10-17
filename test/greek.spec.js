@@ -1,16 +1,16 @@
-import { toGreek, parseGreek } from '../main.js';
+import { greek } from '../numerals.js';
 
 describe('Greek', () => {
   it('should any number below 1 to an empty string', () => {
     const zero = 0;
-    expect(toGreek(zero)).toBe('');
+    expect(greek.to(zero)).toBe('');
   });
   it('should convert any number above 999999 to an empty string', () => {
-    expect(toGreek(999999000000999999)).toBe('');
+    expect(greek.to(999999000000999999)).toBe('');
   });
   it('should have the correct keraia', () => {
-    expect(toGreek(818)).toBe('ωιηʹ');
-    expect(toGreek(818000)).toBe('͵ωιη');
-    expect(toGreek(818818)).toBe('͵ωιη ωιηʹ');
+    expect(greek.to(818)).toBe('ωιηʹ');
+    expect(greek.to(818000)).toBe('͵ωιη');
+    expect(greek.to(818818)).toBe('͵ωιη ωιηʹ');
   });
 });

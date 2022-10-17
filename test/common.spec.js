@@ -1,4 +1,4 @@
-import { fullWidth, mathematicalBold, mathematicalMonospace } from '../main.js';
+import { fullWidth, mathematicalBold, mathematicalMonospace } from '../numerals.js';
 
 describe('Common lib', () => {
   it('Full width', () => {

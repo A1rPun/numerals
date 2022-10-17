@@ -1,3 +1,5 @@
+import { createNumeral } from './common.js';
+
 const maya = ['', '⠂', '⡁', '⠇', '⡇'];
 const mayaZero = '⭖';
 const rod = '|';
@@ -8,7 +10,7 @@ function to(n) {
   return rod.repeat(Math.floor(n / rodNumeral)) + (n ? maya[n % rodNumeral] : mayaZero);
 }
 
-export function parseMaya(str) {
+function parseMaya(str) {
   return str
     .split(' ')
     .reverse()
@@ -22,6 +24,8 @@ export function parseMaya(str) {
       0
     );
 }
-export function toMaya(n) {
+function toMaya(n) {
   return (n >= vigesimal ? `${toMaya(Math.floor(n / vigesimal))} ` : '') + to(n % vigesimal);
 }
+
+export default createNumeral(parseMaya, toMaya);

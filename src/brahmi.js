@@ -1,13 +1,15 @@
+import { createNumeral } from './common.js';
+
 const brahmi = [
   ['', '𑁒', '𑁓', '𑁔', '𑁕', '𑁖', '𑁗', '𑁘', '𑁙', '𑁚'], // ones
   ['', '𑁛', '𑁜', '𑁝', '𑁞', '𑁟', '𑁠', '𑁡', '𑁢', '𑁣'], // tens
   ['', '𑁤', 'H', '𑁤H', 'HH', '𑁤HH', 'HHH', '𑁤HHH', 'HHHH', '𑁤HHHH'], // hundreds
 ];
 
-export function parseBrahmi(str) {
+function parseBrahmi(str) {
   throw Error('Not implemented');
 }
-export function toBrahmi(n) {
+function toBrahmi(n) {
   return n
     .toString()
     .split('')
@@ -17,3 +19,5 @@ export function toBrahmi(n) {
 
 // export * from './src/brahmi.js';
 // log('Brahmi', toBrahmi(input));
+
+export default createNumeral(parseBrahmi, toBrahmi);

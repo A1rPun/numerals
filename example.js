@@ -1,60 +1,62 @@
-const {
-  toAbjad,
-  toAegean,
-  toArabic,
-  toArmenian,
-  toAsian,
-  toAsianFormal,
-  toAttic,
-  toBabylonian,
-  toBijective,
-  toBraille,
-  toChuvash,
-  toCountingRod,
-  toCyrillic,
-  toDuodecimal,
-  toEgyptian,
-  toEtruscan,
-  toGeez,
-  toGeorgian,
-  toGlagolitic,
-  toGreek,
-  toGreekModern,
-  toHebrew,
-  toKharosthi,
-  toMaya,
-  toPhoenician,
-  toRoman,
-  toTallyMarks,
-} = require('./dist/numerals.js');
+import {
+  abjad,
+  aegean,
+  // arabicEast,
+  armenian,
+  asian,
+  // asianFormal,
+  attic,
+  babylonian,
+  bijective,
+  braille,
+  chuvash,
+  countingRod,
+  cyrillic,
+  duodecimal,
+  egyptian,
+  etruscan,
+  geez,
+  georgian,
+  glagolitic,
+  greek,
+  greekModern,
+  hebrew,
+  kharosthi,
+  maya,
+  phoenician,
+  roman,
+  tallyMarks,
+  tallyMarksChinese,
+} from './numerals.js';
 
 const input = (typeof process !== 'undefined' && process.argv[2]) || 29;
 const log = (name, result) => console.log(name.padEnd(15), result);
 
-log('Abjad', toAbjad(input));
-log('Aegean', toAegean(input));
-log('Arabic', toArabic(input));
-log('Armenian', toArmenian(input));
-log('Asian Eastern', toAsian(input));
-log('Asian Formal', toAsianFormal(input));
-log('Attic', toAttic(input));
-log('Babylonian', toBabylonian(input));
-log('Bijective', toBijective(input));
-log('Braille', toBraille(input));
-log('Chuvash', toChuvash(input));
-log('Counting Rod', toCountingRod(input));
-log('Cyrillic', toCyrillic(input));
-log('Duodecimal', toDuodecimal(input));
-log('Egyptian', toEgyptian(input));
-log('Etruscan', toEtruscan(input));
-log('Geez', toGeez(input));
-log('Georgian', toGeorgian(input));
-log('Glagolitic', toGlagolitic(input));
-log('Greek', toGreek(input));
-log('Greek Modern', toGreekModern(input));
-log('Hebrew', toHebrew(input));
-log('Kharosthi', toKharosthi(input));
-log('Maya', toMaya(input));
-log('Phoenician', toPhoenician(input));
-log('Roman', toRoman(input));
-log('Tallymarks', input < 100 ? toTallyMarks(input) : 'Too big');
+log('Abjad', abjad.to(input));
+log('Aegean', aegean.to(input));
+// log('Arabic', arabicEast.to(input));
+log('Armenian', armenian.to(input));
+log('Asian Eastern', asian.to(input));
+// log('Asian Formal', asianFormal.to(input));
+log('Attic', attic.to(input));
+log('Babylonian', babylonian.to(input));
+log('Bijective', bijective.to(input));
+log('Braille', braille.to(input));
+log('Chuvash', chuvash.to(input));
+log('Counting Rod', countingRod.to(input));
+log('Cyrillic', cyrillic.to(input));
+log('Duodecimal', duodecimal.to(input));
+log('Egyptian', egyptian.to(input));
+log('Etruscan', etruscan.to(input));
+log('Geez', geez.to(input));
+log('Georgian', georgian.to(input));
+log('Glagolitic', glagolitic.to(input));
+log('Greek', greek.to(input));
+log('Greek Modern', greekModern.to(input));
+log('Hebrew', hebrew.to(input));
+log('Kharosthi', kharosthi.to(input));
+log('Maya', maya.to(input));
+log('Phoenician', phoenician.to(input));
+log('Roman', roman.to(input));
+log('Tally marks', input < 100 ? tallyMarks.to(input) : 'Too big');
+log('Chinese Tally marks', input < 100 ? tallyMarksChinese.to(input) : 'Too big');

@@ -1,3 +1,5 @@
+import { createNumeral } from './common.js';
+
 const numberIndicator = '⠼';
 const negative = '-';
 const dot = '.';
@@ -5,7 +7,7 @@ const brailleNegative = '⠤';
 const brailleDot = '⠲';
 const braille = ['⠚', '⠁', '⠃', '⠉', '⠙', '⠑', '⠋', '⠛', '⠓', '⠊'];
 
-export function parseBraille(str) {
+function parseBraille(str) {
   const isNegative = str[0] === brailleNegative;
   str = str
     .slice(isNegative ? 2 : 1)
@@ -17,7 +19,7 @@ export function parseBraille(str) {
     .join('');
   return parseFloat((isNegative ? negative : '') + str, 10);
 }
-export function toBraille(n) {
+function toBraille(n) {
   const num = n
     .toString()
     .split('')
@@ -25,3 +27,5 @@ export function toBraille(n) {
     .join('');
   return `${n < 0 ? brailleNegative : ''}${numberIndicator}${num}`;
 }
+
+export default createNumeral(parseBraille, toBraille);

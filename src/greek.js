@@ -1,3 +1,5 @@
+import { createNumeral } from './common.js';
+
 const greek = [
   ['', 'α', 'β', 'γ', 'δ', 'ε', 'ϝ', 'ζ', 'η', 'θ'],
   ['', 'ι', 'κ', 'λ', 'μ', 'ν', 'ξ', 'ο', 'π', 'ϙ'],
@@ -13,10 +15,10 @@ function toGreekNumeral(n) {
     .reduce((acc, x, i) => greek[i][x] + acc, '');
 }
 
-export function parseGreek(str) {
+function parseGreek(str) {
   throw Error('Not implemented');
 }
-export function toGreek(n = 0) {
+function toGreek(n = 0) {
   if (n < 1 || n > 999999) return '';
   const thousands = Math.floor(n / 1000).toString();
   const ones = (n - thousands * 1000).toString();
@@ -24,3 +26,5 @@ export function toGreek(n = 0) {
     ones && ones !== '0' ? ` ${toGreekNumeral(ones)}${keraia}` : ''
   }`.trim();
 }
+
+export default createNumeral(parseGreek, toGreek);

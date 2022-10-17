@@ -1,10 +1,7 @@
 // const georgianDecimalSeparator = ','
-import { createAlphabeticNumeral } from './common';
+import { createAlphabeticNumeral } from './common.js';
 
-export const {
-  parse: parseGeorgian,
-  to: toGeorgian,
-} = createAlphabeticNumeral([
+export default createAlphabeticNumeral([
   ['', 'ა', 'ბ', 'გ', 'დ', 'ე', 'ვ', 'ზ', 'ჱ', 'თ'], // ones
   ['', 'ი', 'კ', 'ლ', 'მ', 'ნ', 'ჲ', 'ო', 'პ', 'ჟ'], // tens
   ['', 'რ', 'ს', 'ტ', 'ჳ', 'ფ', 'ქ', 'ღ', 'ყ', 'შ'], // hundreds უ = 400

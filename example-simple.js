@@ -1,4 +1,4 @@
-const {
+import {
   adlam,
   ahom,
   arabicIndic,
@@ -61,7 +61,7 @@ const {
   vai,
   wancho,
   warangCiti,
-} = require('./dist/numerals.js');
+} from './numerals.js';
 
 const input = (typeof process !== 'undefined' && process.argv[2]) || 29;
 const log = (name, result) => console.log(name.padEnd(15), result);

@@ -1,44 +1,43 @@
-import { toTallyMarks, parseTallyMarks } from '../main.js';
-import { toChineseTallyMarks, parseChineseTallyMarks } from '../main.js';
+import { tallyMarks, tallyMarksChinese } from '../numerals.js';
 
 describe('Tally Marks', () => {
   it('should convert a number to tally marks', () => {
-    expect(toTallyMarks(5)).toBe('𝍸');
-    expect(toTallyMarks(12)).toBe('𝍸𝍸𝍪');
-    expect(toTallyMarks(24)).toBe('𝍸𝍸𝍸𝍸𝍬');
+    expect(tallyMarks.to(5)).toBe('𝍸');
+    expect(tallyMarks.to(12)).toBe('𝍸𝍸𝍪');
+    expect(tallyMarks.to(24)).toBe('𝍸𝍸𝍸𝍸𝍬');
   });
 
   it('should convert tally marks to a number', () => {
-    expect(parseTallyMarks('𝍸')).toBe(5);
-    expect(parseTallyMarks('𝍸𝍸𝍪')).toBe(12);
-    expect(parseTallyMarks('𝍸𝍸𝍸𝍸𝍬')).toBe(24);
+    expect(tallyMarks.parse('𝍸')).toBe(5);
+    expect(tallyMarks.parse('𝍸𝍸𝍪')).toBe(12);
+    expect(tallyMarks.parse('𝍸𝍸𝍸𝍸𝍬')).toBe(24);
   });
 });
 
 describe('Tally Marks Chinese', () => {
   it('should convert a number to tally marks', () => {
-    expect(toChineseTallyMarks(5)).toBe('𝍶');
-    expect(toChineseTallyMarks(12)).toBe('𝍶𝍶𝍳');
-    expect(toChineseTallyMarks(24)).toBe('𝍶𝍶𝍶𝍶𝍵');
+    expect(tallyMarksChinese.to(5)).toBe('𝍶');
+    expect(tallyMarksChinese.to(12)).toBe('𝍶𝍶𝍳');
+    expect(tallyMarksChinese.to(24)).toBe('𝍶𝍶𝍶𝍶𝍵');
   });
 
   it('should convert tally marks to a number', () => {
-    expect(parseChineseTallyMarks('𝍶')).toBe(5);
-    expect(parseChineseTallyMarks('𝍶𝍶𝍳')).toBe(12);
-    expect(parseChineseTallyMarks('𝍶𝍶𝍶𝍶𝍵')).toBe(24);
+    expect(tallyMarksChinese.parse('𝍶')).toBe(5);
+    expect(tallyMarksChinese.parse('𝍶𝍶𝍳')).toBe(12);
+    expect(tallyMarksChinese.parse('𝍶𝍶𝍶𝍶𝍵')).toBe(24);
   });
 });
 
 // describe('Tally Marks Old', () => {
 //   it('should convert a number to tally marks', () => {
-//     expect(toTallyMarks(5)).toBe('||||/');
-//     expect(toTallyMarks(12)).toBe('||||/||||/||');
-//     expect(toTallyMarks(24)).toBe('||||/||||/||||/||||/||||');
+//     expect(tallyMarks.to(5)).toBe('||||/');
+//     expect(tallyMarks.to(12)).toBe('||||/||||/||');
+//     expect(tallyMarks.to(24)).toBe('||||/||||/||||/||||/||||');
 //   });
 
 //   it('should convert tally marks to a number', () => {
-//     expect(parseTallyMarks('||||/')).toBe(5);
-//     expect(parseTallyMarks('||||/||||/||')).toBe(12);
-//     expect(parseTallyMarks('||||/||||/||||/||||/||||')).toBe(24);
+//     expect(tallyMarks.parse('||||/')).toBe(5);
+//     expect(tallyMarks.parse('||||/||||/||')).toBe(12);
+//     expect(tallyMarks.parse('||||/||||/||||/||||/||||')).toBe(24);
 //   });
 // });

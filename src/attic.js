@@ -1,3 +1,5 @@
+import { createNumeral } from './common.js';
+
 const attic = [
   ['', 'Ι', 'II', 'III', 'IIII', 'Π', 'ΠI', 'ΠII', 'ΠIII', 'ΠIIII'], // ones
   ['', 'Δ', 'ΔΔ', 'ΔΔΔ', 'ΔΔΔΔ', '𐅄', '𐅄Δ', '𐅄ΔΔ', '𐅄ΔΔΔ', '𐅄ΔΔΔΔ'], // tens
@@ -6,13 +8,15 @@ const attic = [
   ['', 'Μ', 'ΜΜ', 'ΜΜΜ', 'ΜΜΜΜ', '𐅇', '𐅇Μ', '𐅇ΜΜ', '𐅇ΜΜΜ', '𐅇ΜΜΜΜ'], // tens of thousands
 ];
 
-export function parseAttic(str) {
+function parseAttic(str) {
   throw Error('Not implemented');
 }
-export function toAttic(n) {
+function toAttic(n) {
   return n
     .toString()
     .split('')
     .reverse()
     .reduce((acc, x, i) => (i < attic.length ? attic[i][x] : '𐅇𐅇'.repeat(x)) + acc, '');
 }
+
+export default createNumeral(parseAttic, toAttic);
