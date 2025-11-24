@@ -39,6 +39,7 @@ lao | 0 - Infinite | ໔໒ |
 malayalam | 0 - Infinite | ൪൨ |
 maya | 0 - Infinite | ⡁ ⡁ | Using pipes and braille to mimic the script
 mongolian | 0 - Infinite | ᠔᠒ |
+morse | All | .---- ..--- ...-- |
 odia | 0 - Infinite | ୪୨ |
 persian | 0 - Infinite | ۴۲ | dari, pashto
 phoenician | 1 - 999 | 𐤘𐤘𐤚 |

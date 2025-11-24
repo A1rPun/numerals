@@ -24,6 +24,7 @@ export { default as greekModern } from './src/greek-modern.js';
 export { default as hebrew } from './src/hebrew.js';
 export { default as kharosthi } from './src/kharosthi.js';
 export { default as maya } from './src/maya.js';
+export { default as morse } from './src/morse.js';
 export { default as phoenician } from './src/phoenician.js';
 export { default as roman } from './src/roman.js';
 export { default as tallyMarks } from './src/tally-marks.js';

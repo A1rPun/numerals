@@ -33,6 +33,7 @@ import {
   meeteiMayek,
   modi,
   mongolian,
+  morse,
   mro,
   myanmar,
   myanmarShan,
@@ -100,6 +101,7 @@ log('masaramGondi', masaramGondi.to(input));
 log('meeteiMayek', meeteiMayek.to(input));
 log('modi', modi.to(input));
 log('mongolian', mongolian.to(input));
+log('morse', morse.to(input));
 log('mro', mro.to(input));
 log('myanmar', myanmar.to(input));
 log('myanmarShan', myanmarShan.to(input));
