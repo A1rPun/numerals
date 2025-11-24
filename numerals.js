@@ -6,6 +6,7 @@ export { default as arabicEast } from './src/arabic-east.js';
 export { default as armenian } from './src/armenian.js';
 export { default as asian } from './src/asian.js';
 // export { default as asianFormal } from './src/asian-formal.js';
+export { default as asl } from './src/sign-writing-asl.js';
 export { default as attic } from './src/attic.js';
 export { default as babylonian } from './src/babylonian.js';
 export { default as bijective } from './src/bijective.js';

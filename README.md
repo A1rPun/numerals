@@ -12,6 +12,7 @@ aegean | 1 - 99999 | 𐄓𐄈 |
 arabic eastern | 0 - Infinite | ٤۲ |
 armenian | 1 - 9999 | ԽԲ |
 asian eastern |  | 四十二 | chinese, japanese, korean, vietnamese
+ASL | All | 𝠀𝠎𝠞 | US / FR / BE / DE / CN
 attic | 1 - 99999 | ΔΔΔΔII | herodianic, acrophonic
 babylonian | 0 - Infinite | 𒑩𒐖 |
 bengali | 0 - Infinite | ৪২ |

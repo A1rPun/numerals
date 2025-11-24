@@ -1,4 +1,5 @@
 import {
+  asl,
   adlam,
   ahom,
   arabicIndic,
@@ -75,6 +76,7 @@ log('Sans Serif', mathematicalSansSerif.to(input));
 log('adlam', adlam.to(input));
 log('ahom', ahom.to(input));
 log('arabicIndic', arabicIndic.to(input));
+log('asl', asl.to(input));
 log('balinese', balinese.to(input));
 log('bengali', bengali.to(input));
 log('bhaisuki', bhaisuki.to(input));
