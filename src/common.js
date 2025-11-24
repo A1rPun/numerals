@@ -38,20 +38,3 @@ export function toBase(n, base = 10) {
 export function parseBase(str, base = 10) {
   return parseFloat(str, base);
 }
-// TODO: refactor
-export function normalizeString(str, ...surrogates) {
-  if (!surrogates.length) return str.split('');
-  const fromSurrogate = (charCode, surrogate) =>
-    charCode > surrogate ? String.fromCharCode(surrogate, charCode) : String.fromCharCode(charCode);
-  const charCodes = [];
-  for (let i = 0; i < str.length; i++) {
-    const charCode = str.charCodeAt(i);
-    const surrogate = surrogates.findIndex(x => x === charCode);
-    if (surrogate === -1) {
-      charCodes.push(String.fromCharCode(charCode));
-      continue;
-    }
-    charCodes.push(fromSurrogate(str.charCodeAt(++i), charCode));
-  }
-  return charCodes;
-}

@@ -1,4 +1,4 @@
-import { createNumeral, normalizeString } from './common.js';
+import { createNumeral } from './common.js';
 
 const zero = ' ';
 const baby = [
@@ -6,7 +6,6 @@ const baby = [
   ['', '𒌋', '𒎙', '𒌍', '𒑩', '𒑪'],
 ];
 const sexagesimal = 60;
-const surrogates = [55305, 55304];
 
 function parseBaby(c) {
   if (c === zero) return 0;
@@ -15,7 +14,7 @@ function parseBaby(c) {
 }
 
 function parseBabylonian(str) {
-  return normalizeString(str, ...surrogates)
+  return [...str]
     .map(parseBaby)
     .reduce((acc, cur) => {
       if (cur)

@@ -1,11 +1,9 @@
-import { createNumeral, normalizeString } from './common.js';
+import { createNumeral } from './common.js';
 
 const tallyMarks = ['', '𝍩', '𝍪', '𝍫', '𝍬', '𝍸'];
 
-const surrogate = 55348;
-
 function parseTallyMarks(str) {
-  return normalizeString(str, surrogate).reduce((acc, x) => acc + tallyMarks.indexOf(x), 0);
+  return [...str].reduce((acc, x) => acc + tallyMarks.indexOf(x), 0);
 }
 
 function toTallyMarks(n) {

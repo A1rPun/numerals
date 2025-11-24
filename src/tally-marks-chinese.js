@@ -1,11 +1,9 @@
-import { createNumeral, normalizeString } from './common.js';
+import { createNumeral } from './common.js';
 
 const tallyMarks = ['', '𝍲', '𝍳', '𝍴', '𝍵', '𝍶'];
 
-const surrogate = 55348;
-
 function parseChineseTallyMarks(str) {
-  return normalizeString(str, surrogate).reduce((acc, x) => acc + tallyMarks.indexOf(x), 0);
+  return [...str].reduce((acc, x) => acc + tallyMarks.indexOf(x), 0);
 }
 
 function toChineseTallyMarks(n) {

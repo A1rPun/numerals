@@ -1,14 +1,12 @@
-import { createNumeral, normalizeString } from './common.js';
+import { createNumeral } from './common.js';
 
 const countingRod = [
   ['o', '𝍩', '𝍪', '𝍫', '𝍬', '𝍭', '𝍮', '𝍯', '𝍰', '𝍱'],
   ['o', '𝍠', '𝍡', '𝍢', '𝍣', '𝍤', '𝍥', '𝍦', '𝍧', '𝍨'],
 ];
 
-const surrogate = 55348;
-
 function parseCountingRod(str) {
-  return +normalizeString(str, surrogate)
+  return +[...str]
     .map(x => {
       const vertical = countingRod[0].indexOf(x);
       if (~vertical) return vertical;
