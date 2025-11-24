@@ -15,6 +15,7 @@ function parseAegean(str) {
   );
   return parseInt(numeral, 10) + str.match(/^M*/)[0].length * 1000;
 }
+
 function toAegean(n) {
   return [...n.toString()]
     .reverse()

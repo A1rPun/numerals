@@ -9,6 +9,7 @@ const phoenician = [
 function parsePhoenician(str) {
   throw Error('Not implemented');
 }
+
 function toPhoenician(n) {
   return [...n.toString()]
     .reverse()

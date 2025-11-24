@@ -24,6 +24,7 @@ function parseMaya(str) {
       0
     );
 }
+
 function toMaya(n) {
   return (n >= vigesimal ? `${toMaya(Math.floor(n / vigesimal))} ` : '') + to(n % vigesimal);
 }

@@ -15,6 +15,7 @@ function parseCountingRod(str) {
     })
     .join('');
 }
+
 function toCountingRod(n) {
   let swap = n.toString().length % 2;
   return [...n.toString()]

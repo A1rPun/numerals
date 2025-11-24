@@ -8,6 +8,7 @@ const etruscan = [
 function parseEtruscan(str) {
   throw Error('Not implemented');
 }
+
 function toEtruscan(n) {
   return [...n.toString()]
     .reverse()

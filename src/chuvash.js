@@ -9,6 +9,7 @@ const chuvash = [
 function parseChuvash(str) {
   throw Error('Not implemented');
 }
+
 function toChuvash(n) {
   return [...n.toString()]
     .reverse()

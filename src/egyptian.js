@@ -8,6 +8,7 @@ function parseEgyptian(str) {
     0
   );
 }
+
 function toEgyptian(n) {
   return [...n.toString()]
     .reverse()

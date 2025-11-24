@@ -11,6 +11,7 @@ const attic = [
 function parseAttic(str) {
   throw Error('Not implemented');
 }
+
 function toAttic(n) {
   return [...n.toString()]
     .reverse()

@@ -9,6 +9,7 @@ const brahmi = [
 function parseBrahmi(str) {
   throw Error('Not implemented');
 }
+
 function toBrahmi(n) {
   return [...n.toString()]
     .reverse()

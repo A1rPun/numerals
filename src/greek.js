@@ -17,6 +17,7 @@ function toGreekNumeral(n) {
 function parseGreek(str) {
   throw Error('Not implemented');
 }
+
 function toGreek(n = 0) {
   if (n < 1 || n > 999999) return '';
   const thousands = Math.floor(n / 1000).toString();
