@@ -1,12 +1,13 @@
 import { createNumeral } from './common.js';
 
-// American Sign Language
+// British/Australian/New Zealand Sign Language
 
 const negative = '-';
 const dot = '.';
 const aslNegative = '𝪈'; // TODO: right?
 const aslDot = '𝩷'; // TODO: right?
-const signs = ['𝡶', '𝠀', '𝠎', '𝠞', '𝡄', '𝡌', '𝢇', '𝢥', '𝢻', '𝣎'];
+// TODO: 6,7,8,9 rotate 45degree angle left
+const signs = ['◑', '𝠀', '𝠎', '𝠞', '𝡄', '𝡌', '𝣸⦩', '𝣜⦩', '𝠞⦩', '𝢎⦩'];
 
 function parseAsl(str) {
   const normalized = [...str];
