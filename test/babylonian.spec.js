@@ -20,7 +20,7 @@ describe('Babylonian', () => {
     expect(babylonian.to(82800)).toBe('𒎙𒐈  ');
     expect(babylonian.to(216060)).toBe('𒐕 𒐕 ');
     // TODO: include all possible converted numerals
-    expect(babylonian.to(9007199254740991)).toBe('𒑪𒐈𒌍𒑂𒌍𒐊𒌍𒐖𒎙𒐖𒎙𒑆𒑩𒐈𒌍𒐋𒌍𒐕');
+    expect(babylonian.to(Number.MAX_SAFE_INTEGER)).toBe('𒑪𒐈𒌍𒑂𒌍𒐊𒌍𒐖𒎙𒐖𒎙𒑆𒑩𒐈𒌍𒐋𒌍𒐕');
   });
   it('should convert a string to a number', () => {
     expect(babylonian.parse('𒐊')).toBe(5);
@@ -36,6 +36,6 @@ describe('Babylonian', () => {
     expect(babylonian.parse('𒐕𒐕 ')).toBe(3660);
     expect(babylonian.parse('𒎙𒐈  ')).toBe(82800);
     expect(babylonian.parse('𒐕 𒐕 ')).toBe(216060);
-    expect(babylonian.parse('𒑪𒐈𒌍𒑂𒌍𒐊𒌍𒐖𒎙𒐖𒎙𒑆𒑩𒐈𒌍𒐋𒌍𒐕')).toBe(9007199254740991);
+    expect(babylonian.parse('𒑪𒐈𒌍𒑂𒌍𒐊𒌍𒐖𒎙𒐖𒎙𒑆𒑩𒐈𒌍𒐋𒌍𒐕')).toBe(Number.MAX_SAFE_INTEGER);
   });
 });

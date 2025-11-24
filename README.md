@@ -4,7 +4,6 @@
 
 ## Supported systems
 
-
 System | Range | Example | Description
 --- | --- | --- | ---
 abjad | 1 - 999 | مب |
@@ -66,6 +65,7 @@ tibetan | 0 - Infinite | ༤༢ |
 - Error handling for valid input (Garbage in garbage out for now)
 - Scientific notation
 - Unicode maps
+- dictionaries better than array lookup
 
 ### Improvements
 

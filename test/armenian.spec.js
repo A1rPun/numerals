@@ -6,4 +6,3 @@ describe('Armenian', () => {
     expect(armenian.parse('Ա')).toBe(1);
   });
 });
-
