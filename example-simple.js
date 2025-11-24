@@ -1,12 +1,10 @@
 import {
-  asl,
   adlam,
   ahom,
   arabicIndic,
   balinese,
   bengali,
   bhaisuki,
-  brahmi,
   chakma,
   cham,
   devanagari,
@@ -34,7 +32,6 @@ import {
   meeteiMayek,
   modi,
   mongolian,
-  morse,
   mro,
   myanmar,
   myanmarShan,
@@ -76,11 +73,9 @@ log('Sans Serif', mathematicalSansSerif.to(input));
 log('adlam', adlam.to(input));
 log('ahom', ahom.to(input));
 log('arabicIndic', arabicIndic.to(input));
-log('asl', asl.to(input));
 log('balinese', balinese.to(input));
 log('bengali', bengali.to(input));
 log('bhaisuki', bhaisuki.to(input));
-log('brahmi', brahmi.to(input));
 log('chakma', chakma.to(input));
 log('cham', cham.to(input));
 log('devanagari', devanagari.to(input));
@@ -103,7 +98,6 @@ log('masaramGondi', masaramGondi.to(input));
 log('meeteiMayek', meeteiMayek.to(input));
 log('modi', modi.to(input));
 log('mongolian', mongolian.to(input));
-log('morse', morse.to(input));
 log('mro', mro.to(input));
 log('myanmar', myanmar.to(input));
 log('myanmarShan', myanmarShan.to(input));

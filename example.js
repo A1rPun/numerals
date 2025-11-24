@@ -1,14 +1,15 @@
 import {
   abjad,
   aegean,
-  // arabicEast,
+  arabicEast,
   armenian,
-  asian,
-  // asianFormal,
   attic,
   babylonian,
   bijective,
+  brahmi,
   braille,
+  chinese,
+  chineseTraditional,
   chuvash,
   countingRod,
   cyrillic,
@@ -23,8 +24,14 @@ import {
   hebrew,
   kharosthi,
   maya,
+  morse,
   phoenician,
   roman,
+  asl,
+  banzsl,
+  dgs,
+  libras,
+  lsf,
   tallyMarks,
   tallyMarksChinese,
 } from './numerals.js';
@@ -34,13 +41,19 @@ const log = (name, result) => console.log(name.padEnd(15), result);
 
 log('Abjad', abjad.to(input));
 log('Aegean', aegean.to(input));
-// log('Arabic', arabicEast.to(input));
+log('Arabic', arabicEast.to(input));
 log('Armenian', armenian.to(input));
-log('Asian Eastern', asian.to(input));
-// log('Asian Formal', asianFormal.to(input));
+log('ASL', asl.to(input));
+log('BSL/BANZSL', banzsl.to(input));
+log('DGS', dgs.to(input));
+log('Libras', libras.to(input));
+log('LSF', lsf.to(input));
+log('Simplified Chinese', chinese.to(input));
+log('Traditional Chinese', chineseTraditional.to(input));
 log('Attic', attic.to(input));
 log('Babylonian', babylonian.to(input));
 log('Bijective', bijective.to(input));
+log('Brahmi', brahmi.to(input));
 log('Braille', braille.to(input));
 log('Chuvash', chuvash.to(input));
 log('Counting Rod', countingRod.to(input));
@@ -56,6 +69,7 @@ log('Greek Modern', greekModern.to(input));
 log('Hebrew', hebrew.to(input));
 log('Kharosthi', kharosthi.to(input));
 log('Maya', maya.to(input));
+log('Morse', morse.to(input));
 log('Phoenician', phoenician.to(input));
 log('Roman', roman.to(input));
 log('Tally marks', input < 100 ? tallyMarks.to(input) : 'Too big');
