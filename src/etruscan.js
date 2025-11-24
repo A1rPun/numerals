@@ -9,9 +9,7 @@ function parseEtruscan(str) {
   throw Error('Not implemented');
 }
 function toEtruscan(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => acc + (i < etruscan.length ? etruscan[i][x] : '𐌟'.repeat(x)), '');
 }

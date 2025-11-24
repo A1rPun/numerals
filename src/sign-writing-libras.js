@@ -23,9 +23,7 @@ function parseLibras(str) {
 }
 
 function toLibras(n) {
-  const num = n
-    .toString()
-    .split('')
+  const num = [...n.toString()]
     .map(x => (x === dot ? librasDot : signs[x] || ''))
     .join('');
   return `${n < 0 ? librasNegative : ''}${num}`;

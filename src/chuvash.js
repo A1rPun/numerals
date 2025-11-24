@@ -10,9 +10,7 @@ function parseChuvash(str) {
   throw Error('Not implemented');
 }
 function toChuvash(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => acc + (i < chuvash.length ? chuvash[i][x] : '✳'.repeat(x)), '');
 }

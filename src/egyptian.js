@@ -9,9 +9,7 @@ function parseEgyptian(str) {
   );
 }
 function toEgyptian(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => (i < egyptian.length ? egyptian[i].repeat(x) : '') + acc, '');
 }

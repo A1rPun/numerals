@@ -26,9 +26,7 @@ function parseMorse(str) {
 }
 
 function toMorse(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .map(x => x === dot ? dotMorse : morse[x])
     .join(' ');
 }

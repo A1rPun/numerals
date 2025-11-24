@@ -16,7 +16,7 @@ export class SimpleNumberConverter {
   }
 
   to(n) {
-    return n.toString().split('').map(x => {
+    return [...n.toString()].map(x => {
       const num = parseBase(x);
       return isNaN(num) ? x : String.fromCodePoint(this.codepointzero + num);
     }).join('');

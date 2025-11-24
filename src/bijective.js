@@ -1,8 +1,7 @@
 import { createNumeral } from './common.js';
 
 function parseBijective(str) {
-  return str
-    .split('')
+  return [...str]
     .reverse()
     .reduce((acc, x, i) => acc + (parseInt(x, 36) - 9) * 26 ** i, 0);
 }

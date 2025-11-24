@@ -10,9 +10,7 @@ function parsePhoenician(str) {
   throw Error('Not implemented');
 }
 function toPhoenician(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => (i < phoenician.length ? phoenician[i][x] : '') + acc, '');
 }

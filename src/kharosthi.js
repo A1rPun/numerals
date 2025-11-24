@@ -11,9 +11,7 @@ function parseKharosthi(str) {
 }
 
 function toKharosthi(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => (i < kharosthi.length ? kharosthi[i][x] : '𐩇'.repeat(x)) + acc, '');
 }

@@ -22,9 +22,7 @@ function parseBraille(str) {
 }
 
 function toBraille(n) {
-  const num = n
-    .toString()
-    .split('')
+  const num = [...n.toString()]
     .map(x => (x === dot ? brailleDot : braille[x] || ''))
     .join('');
   return `${numberIndicator}${n < 0 ? brailleNegative : ''}${num}`;

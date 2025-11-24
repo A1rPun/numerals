@@ -21,9 +21,7 @@ function parseAsl(str) {
 }
 
 function toAsl(n) {
-  const num = n
-    .toString()
-    .split('')
+  const num = [...n.toString()]
     .map(x => (x === dot ? aslDot : signs[x] || ''))
     .join('');
   return `${n < 0 ? aslNegative : ''}${num}`;

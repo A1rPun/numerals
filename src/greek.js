@@ -9,8 +9,7 @@ const keraia = 'ʹ';
 const keraia_thousand = '͵';
 
 function toGreekNumeral(n) {
-  return n
-    .split('')
+  return [...n]
     .reverse()
     .reduce((acc, x, i) => greek[i][x] + acc, '');
 }

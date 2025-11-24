@@ -10,9 +10,7 @@ function parseBrahmi(str) {
   throw Error('Not implemented');
 }
 function toBrahmi(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => (i < brahmi.length ? brahmi[i][x] : '𑁥'.repeat(x)) + acc, '');
 }

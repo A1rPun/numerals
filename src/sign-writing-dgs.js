@@ -21,9 +21,7 @@ function parseDgs(str) {
 }
 
 function toDgs(n) {
-  const num = n
-    .toString()
-    .split('')
+  const num = [...n.toString()]
     .map(x => (x === dot ? dgsDot : signs[x] || ''))
     .join('');
   return `${n < 0 ? dgsNegative : ''}${num}`;

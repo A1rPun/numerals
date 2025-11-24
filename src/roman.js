@@ -16,9 +16,7 @@ function parseRoman(str) {
   return parseInt(numeral, 10) + str.match(/^M*/)[0].length * 1000;
 }
 function toRoman(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => (i < roman.length ? roman[i][x] : 'M'.repeat(x)) + acc, '');
 }

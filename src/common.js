@@ -9,12 +9,10 @@ export function createAlphabeticNumeral(numerals, toFn) {
       },
       toFn ? { [toFn(1)]: 10 ** numerals.length } : {}
     );
-    return str.split('').reduce((acc, x) => acc + (numeralsDict[x] || 0), 0);
+    return [...str].reduce((acc, x) => acc + (numeralsDict[x] || 0), 0);
   };
   const to = (n) => {
-    return n
-      .toString()
-      .split('')
+    return [...n.toString()]
       .reverse()
       .reduce(
         (acc, x, i) => (i < numerals.length ? numerals[i][x] : toFn ? toFn(x, i) : '') + acc,

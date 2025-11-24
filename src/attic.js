@@ -12,9 +12,7 @@ function parseAttic(str) {
   throw Error('Not implemented');
 }
 function toAttic(n) {
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .reverse()
     .reduce((acc, x, i) => (i < attic.length ? attic[i][x] : '𐅇𐅇'.repeat(x)) + acc, '');
 }

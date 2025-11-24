@@ -17,9 +17,7 @@ function parseCountingRod(str) {
 }
 function toCountingRod(n) {
   let swap = n.toString().length % 2;
-  return n
-    .toString()
-    .split('')
+  return [...n.toString()]
     .map(x => countingRod[(swap ^= 1)][x])
     .join('');
 }

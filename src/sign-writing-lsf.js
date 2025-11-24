@@ -21,9 +21,7 @@ function parseLsf(str) {
 }
 
 function toLsf(n) {
-  const num = n
-    .toString()
-    .split('')
+  const num = [...n.toString()]
     .map(x => (x === dot ? lsfDot : signs[x] || ''))
     .join('');
   return `${n < 0 ? lsfNegative : ''}${num}`;

@@ -29,9 +29,7 @@ function parseBabylonian(str) {
 
 function toBaby(n) {
   return n
-    ? n
-        .toString()
-        .split('')
+    ? [...n.toString()]
         .reverse()
         .reduce((acc, x, i) => baby[i][x] + acc, '')
     : zero;

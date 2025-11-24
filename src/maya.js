@@ -19,7 +19,7 @@ function parseMaya(str) {
         acc +
         (x === mayaZero
           ? 0
-          : x.split('').reduce((a, y) => a + (y === rod ? rodNumeral : maya.indexOf(y)), 0) *
+          : [...x].reduce((a, y) => a + (y === rod ? rodNumeral : maya.indexOf(y)), 0) *
             (i ? vigesimal ** i : 1)),
       0
     );
