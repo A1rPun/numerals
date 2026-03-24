@@ -17,10 +17,10 @@ function parseChinese(str) {
   return +[...str]
     .reduce((acc, x) => {
       const tenthousands = chinese[2].indexOf(x);
-      console.log(acc);
+      // console.log(acc);
 
       if (tenthousands !== -1) {
-        console.log('tenthousands', acc, tenthousands);
+        // console.log('tenthousands', acc, tenthousands);
         // acc.value -= acc.lastValue;
         acc.value += acc.value * (10_000 ** tenthousands);
         acc.lastValue = 0;
@@ -29,8 +29,8 @@ function parseChinese(str) {
       const tens = chinese[1].indexOf(x);
 
       if (tens !== -1) {
-        console.log('tens', tens);
-        const value = (acc.lastValue || 1) * 10 ** tens;
+        // console.log('tens', tens);
+        const value = (acc.lastValue || 1) * decimal ** tens;
         acc.value -= acc.lastValue;
         acc.value += value;
         acc.lastValue = value;
@@ -39,7 +39,7 @@ function parseChinese(str) {
       const ones = x === chineseTwo ? 2 : chinese[0].indexOf(x);
 
       if (ones !== -1) {
-        console.log('ones', ones);
+        // console.log('ones', ones);
         acc.value += ones;
         acc.lastValue = ones;
       }
@@ -53,10 +53,10 @@ function parseChinese(str) {
 }
 
 function toChinese(n) {
-  if (n < 10) return chinese[0][n];
+  if (n < decimal) return chinese[0][n];
 
   const stride = 4;
-  const tensStride = 5; // remove
+  const tensStride = 5; // TODO: improve liang/er check
 
   return [...n.toString()]
     .reverse()

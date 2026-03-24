@@ -11,4 +11,5 @@ const decimal = 10;
 const dot = '.';
 const negative = '-';
 
+export default createNumeral(() => '', () => '');
 // export default createNumeral(parseAsianFormal, toAsianFormal);

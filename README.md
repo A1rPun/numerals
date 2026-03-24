@@ -4,19 +4,24 @@
 
 ## Supported systems
 
+- Example number = 42
+- Range
+  - Infinite = accurate till Number.MAX_SAFE_INTEGER
+  - All = All numbers supported
+
 System | Range | Example | Description
 --- | --- | --- | ---
 abjad | 1 - 999 | مب |
 aegean | 1 - 99999 | 𐄓𐄈 |
 arabic eastern | 0 - Infinite | ٤۲ |
 armenian | 1 - 9999 | ԽԲ |
-asian eastern |  | 四十二 | chinese, japanese, korean, vietnamese
 ASL | All | 𝠀𝠎𝠞 | US / FR / BE / DE / CN
 attic | 1 - 99999 | ΔΔΔΔII | herodianic, acrophonic
 babylonian | 0 - Infinite | 𒑩𒐖 |
 bengali | 0 - Infinite | ৪২ |
 bijective | 1 - Infinite | AP |
 braille | All | ⠼⠙⠃ |
+chinese eastern | 1 - 999 | 四十二 | WIP
 burmese | 0 - Infinite | ၄၂ |
 chuvash | 1 - 9999 | IIXXXX |
 counting rods | 1 - Infinite | 𝍣𝍪 |
@@ -50,9 +55,6 @@ tamil | 0 - Infinite | ௪௨ |
 telugu | 0 - Infinite | ౪౨ |
 thai | 0 - Infinite | ๔๒ |
 tibetan | 0 - Infinite | ༤༢ |
-
-> Infinite = accurate till Number.MAX_SAFE_INTEGER
-> All = All numbers supported
 
 ## TODO
 
