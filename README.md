@@ -83,7 +83,7 @@ sundanese | ALL | ᮴᮲
 tai tham hora | ALL | ᪄᪂
 tai tham tham | ALL | ᪔᪒
 takri | ALL | 𑛄𑛂
-tally marks | 1 - Infinite | 𝍸 |
+tally marks | 1 - Infinite | 𝍸𝍸𝍸𝍸𝍸𝍸𝍸𝍸𝍪 |
 tally marks chinese | 1 - Infinite | 𝍶𝍶𝍶𝍶𝍶𝍶𝍶𝍶𝍳 |
 tamil | 0 - Infinite | ௪௨ |
 telugu | 0 - Infinite | ౪౨ |
