@@ -37,7 +37,6 @@ export { default as tallyMarks } from './src/tally-marks.js';
 export { default as tallyMarksChinese } from './src/tally-marks-chinese.js';
 
 // Sorted on code point
-// export const ascii = new SimpleNumberConverter(0x30);
 export const arabicIndic = new SimpleNumberConverter(0x0660);
 export const extendedArabicIndic = new SimpleNumberConverter(0x06f0); // Persian
 export const nko = new SimpleNumberConverter(0x07c0);
@@ -76,7 +75,6 @@ export const meeteiMayek = new SimpleNumberConverter(0xabf0);
 export const fullWidth = new SimpleNumberConverter(0xff10);
 export const osmanya = new SimpleNumberConverter(0x104a0);
 export const hanifiRohingya = new SimpleNumberConverter(0x10d30);
-export const brahmi = new SimpleNumberConverter(0x11066);
 export const soraSompeng = new SimpleNumberConverter(0x110f0);
 export const chakma = new SimpleNumberConverter(0x11136);
 export const sharada = new SimpleNumberConverter(0x111d0);

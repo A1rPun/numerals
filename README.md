@@ -26,7 +26,6 @@ bhaisuki | ALL | 𑱔𑱒 |
 bijective | 1 - Infinite | AP |
 brahmi | ALL | 𑁞𑁓 |
 braille | All | ⠼⠙⠃ |
-burmese | 0 - Infinite | ၄၂ |
 chakma | ALL | 𑄺𑄸 |
 cham | ALL | ꩔꩒ |
 chinese simplified | 1 - 999 | 四十二 | WIP
@@ -64,7 +63,7 @@ modi | ALL | 𑙔𑙒 |
 mongolian | 0 - Infinite | ᠔᠒ |
 morse | All | ....- ..--- |
 mro | ALL | 𖩤𖩢 |
-myanmar | ALL | ၄၂ |
+myanmar | ALL | ၄၂ | burmese
 myanmar shan | ALL | ႔႒ |
 myanmar tai laing | ALL | ꧴꧲ |
 newa | ALL | 𑑔𑑒 |
@@ -73,7 +72,7 @@ nko | ALL | ߄߂ |
 nyiakeng puachue hmong | ALL | 𞅄𞅂 |
 oriya | ALL | ୪୨ |
 osmanya | ALL | 𐒤𐒢 |
-persian | 0 - Infinite | ۴۲ | dari, pashto
+persian | 0 - Infinite | ۴۲ | dari, pashto, "extended arabic indic"
 phoenician | 1 - 999 | 𐤘𐤘𐤚 |
 roman | 1 - 9999 | XLII |
 saurashtra | ALL | ꣔꣒
