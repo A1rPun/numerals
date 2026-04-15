@@ -15,6 +15,7 @@ export { default as chuvash } from './src/chuvash.js';
 export { default as countingRod } from './src/countingrod.js';
 export { default as cyrillic } from './src/cyrillic.js';
 export { default as duodecimal } from './src/duodecimal.js';
+export { default as dutch } from './src/dutch.js';
 export { default as egyptian } from './src/egyptian.js';
 export { default as etruscan } from './src/etruscan.js';
 export { default as geez } from './src/geez.js';
