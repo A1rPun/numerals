@@ -1,4 +1,4 @@
-import { createNumeral } from './common.js';
+import { createSpokenNumeral } from './common.js';
 
 const numbers = {
   negative: (n) => `min ${n}`,
@@ -10,7 +10,7 @@ const numbers = {
   13: (o, t) => 'der' + t,
   14: (o, t) => 'veer' + t,
   1x: (o, t) => o + t,
-  x0: (o, t) => o + 'tig',
+  x0: (o, t) => t + 'tig',
   2x: (o, t) => 'twin' + t,
   3x: (o, t) => 'der' + t,
   4x: (o, t) => 'veer' + t,
@@ -18,7 +18,7 @@ const numbers = {
   xx: (o, t) => `${o}en${t}`,
   x2: (o, t) => `${o}ën${t}`, // or only replace tens?
   x3: (o, t) => `${o}ën${t}`,
-  //1xx: () => 'honderd',
+  100: () => 'honderd',
   x00: (o, t, h) => o + h,
   x0x: (o, t, h) => h + o, // nodig?
   xxx: (o, t, h) => h + t,
@@ -28,6 +28,11 @@ const numbers = {
     const bigN = ['m', 'b', 'tr', 'quadr', 'quint', 'sext', 'sept', 'oct', 'non', 'dec', 'undec', 'duodec', 'tredec', 'quattuordec', 'quindec', 'sedec']
     return bigN[abc];
   }
+};
+
+
+const words = {
+  // or a regex?
 };
 
 /*
@@ -52,6 +57,13 @@ const numbers = {
  * x5
  * 5x
  * x
+ *
+ * 22
+ * ones ones
+ * 2x
+ * x0
+ * x2
+ * xx
  */
 
   /*
@@ -66,56 +78,5 @@ const numbers = {
   8: () => 'acht',
   9: () => 'negen',
   */
-function toDutch(n) {
-  const negativeN = n < 0;
-
-  if (negativeN) {
-    result.push(negative);
-    n = n * -1; // math.abs
-  }
-  const numberParts = n.toString().split('.');
-  const number = chunk(numberParts[0])
-    .map(toDutchPart)
-    .filter(x => x)
-    .reverse();
-  result = result.concat(number);
-
-  if (numberParts.length > 1) {
-    result.push(divider);
-    const decimals = [...numberParts[1]]
-      .map(x => numbers[0][x]);
-    result = result.concat(decimals);
-  }
-
-  return result.join(' ');
-}
-
-function parseDutch(str) {
-  return 0; 
-}
-
-function toDutchPart(n, pos) {
-}
-
-function chunk(source, size = 3) {
-  let chunks = [];
-  let chunk = '';
-  let count = 0;
-
-  for (let i = source.length; i--;) {
-    chunk += source[i];
-    count++;
-
-    if (size === count) {
-      chunks.push(chunk);
-      count = 0;
-      chunk = '';
-    }
-  }
-
-  if (chunk.length) chunks.push(chunk);
-  return chunks;
-}
-
-export default createNumeral(parseDutch, toDutch);
+export default createSpokenNumeral(words, numbers);
 
